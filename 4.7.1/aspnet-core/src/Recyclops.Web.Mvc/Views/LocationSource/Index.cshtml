@@ -1,0 +1,88 @@
+﻿@using Recyclops.Web.Startup
+@model List<Recyclops.Web.Models.LocationSource.LocationSourceViewModel>
+@{
+    ViewBag.CurrentPageName = PageNames.LocationSource; // The menu item will be active for this page.
+}
+@section scripts
+{
+    <environment names="Development">
+        <script src="~/view-resources/Views/LocationSource/Index.js" asp-append-version="true"></script>
+    </environment>
+}
+
+
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    @L("LocationSources")
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="tableContainer" class="body table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Address</th>
+                            <th>Zip</th>
+                            <th>@L("Actions")</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>@item.City</td>
+                            <td>@item.State</td>
+                            <td>@item.Address</td>
+                            <td>@item.Zip</td>
+                            <td class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">menu</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li>
+
+                                        <a href="#" class="dropdown-item waves-effect waves-block edit-tag" data-tag-id="@item.Id">
+                                            <i class="fa fa-pencil-alt"></i>@L("Edit")
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item waves-effect waves-block delete-tag" data-tag-id="@item.Id">
+                                            <i class="fa fa-times"></i>@L("Delete")
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                <button type="button" id="addButton" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal" role="dialog" aria-labelledby="TagCreateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content"></div>
+    </div>
+</div>

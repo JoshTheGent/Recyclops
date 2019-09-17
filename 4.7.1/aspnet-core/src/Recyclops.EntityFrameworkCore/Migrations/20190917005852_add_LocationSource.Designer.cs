@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Recyclops.EntityFrameworkCore;
 
 namespace Recyclops.Migrations
 {
     [DbContext(typeof(RecyclopsDbContext))]
-    partial class RecyclopsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190917005852_add_LocationSource")]
+    partial class add_LocationSource
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1083,15 +1085,11 @@ namespace Recyclops.Migrations
 
                     b.Property<DateTime?>("DeletionTime");
 
-                    b.Property<bool>("HeatedBed");
-
                     b.Property<bool>("IsDeleted");
 
                     b.Property<DateTime?>("LastModificationTime");
 
                     b.Property<long?>("LastModifierUserId");
-
-                    b.Property<int>("LocationSourceId");
 
                     b.Property<double>("Mass");
 
@@ -1100,8 +1098,6 @@ namespace Recyclops.Migrations
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("LocationSourceId");
 
                     b.ToTable("Plastic");
                 });
@@ -1331,14 +1327,6 @@ namespace Recyclops.Migrations
                     b.HasOne("Recyclops.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
-                });
-
-            modelBuilder.Entity("Recyclops.Domains.Plastic.Plastic", b =>
-                {
-                    b.HasOne("Recyclops.Domains.LocationSource.LocationSource", "LocationSource")
-                        .WithMany("Plastics")
-                        .HasForeignKey("LocationSourceId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Recyclops.MultiTenancy.Tenant", b =>

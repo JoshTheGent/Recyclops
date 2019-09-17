@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="en">
   <texts>
+    <text name="Admin" value="Admin" />
+    <text name="LocationSources" value="Location Sources" />
+    <text name="LocationSource" value="LocationSource" />
+    <text name="Plastics" value="Plastics" />
+    <text name="Plastic" value="Plastic" />
     <text name="HomePage" value="Home page" />
     <text name="About" value="About" />
     <text name="WelcomeMessage" value="Welcome to Recyclops!" />
