@@ -1,5 +1,5 @@
 ﻿(function ($) {
-    $("#states").select2();
+    //$("#states").select2();
 
     var _$modal = $("#LocationSourceForm");
     var _$form = $('form[name=createForm]');
