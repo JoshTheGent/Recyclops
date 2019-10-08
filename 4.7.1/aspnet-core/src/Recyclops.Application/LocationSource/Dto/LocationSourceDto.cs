@@ -18,6 +18,7 @@ namespace Recyclops.LocationSource.Dto
             State = dom.State;
             Address = dom.Address;
             Zip = dom.Zip;
+            URL = dom.URL;
         }
 
 
@@ -26,5 +27,6 @@ namespace Recyclops.LocationSource.Dto
         public Enums.State State { get; set; }
         public string Address { get; set; }
         public string Zip { get; set; }
+        public string URL { get; set; }
     }
 }

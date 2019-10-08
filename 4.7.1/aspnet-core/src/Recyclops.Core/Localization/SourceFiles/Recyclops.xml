@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="en">
   <texts>
+    <text name="Maps" value="Maps" />
+    <text name="Website" value="Website" />
     <text name="Admin" value="Admin" />
     <text name="LocationSources" value="Location Sources" />
     <text name="LocationSource" value="LocationSource" />

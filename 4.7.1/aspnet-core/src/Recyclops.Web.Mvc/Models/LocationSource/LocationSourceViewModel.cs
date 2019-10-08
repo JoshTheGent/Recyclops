@@ -22,6 +22,7 @@ namespace Recyclops.Web.Models.LocationSource
             State = dto.State;
             Address = dto.Address;
             Zip = dto.Zip;
+            URL = dto.URL;
 
         }
 
@@ -31,6 +32,7 @@ namespace Recyclops.Web.Models.LocationSource
         public Enums.State State { get; set; }
         public string Address { get; set; }
         public string Zip { get; set; }
+        public string URL { get; set; }
 
 
         public LocationSourceDto DtoModel()
@@ -42,7 +44,8 @@ namespace Recyclops.Web.Models.LocationSource
                 City = City,
                 State = State,
                 Address = Address,
-                Zip = Zip
+                Zip = Zip,
+                URL = URL
 
             };
         }
