@@ -27,10 +27,17 @@ namespace Recyclops.Web.Startup
                         url: "About",
                         icon: "info"
                     )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("QuestionsConcerns"),
+                        url: "QuestionsConcerns",
+                        icon: "info"
+                    )
                 ).AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
-                        "Admin",
-                        L("Admin"),
+                        "Management",
+                        L("Management"),
                         icon: "menu"
                     ).AddItem(
                         new MenuItemDefinition(
@@ -46,7 +53,11 @@ namespace Recyclops.Web.Startup
                             url: "LocationSource",
                             icon: "business"
 
-                        )
+                        ))).AddItem( // Menu items below is just for demonstration!
+                    new MenuItemDefinition(
+                        "Admin",
+                        L("Admin"),
+                        icon: "menu"
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.Tenants,
