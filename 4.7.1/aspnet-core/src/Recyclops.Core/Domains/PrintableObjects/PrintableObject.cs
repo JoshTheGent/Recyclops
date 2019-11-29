@@ -15,9 +15,11 @@ namespace Recyclops.Domains.PrintableObject
         public TimeSpan PrintTime { get; set; }
         public double PrintCost { get; set; }
         public double SellValue { get; set; }
+        public string URL { get; set; }
 
 
-
+        //remove to show ease of fixes
+        //public double MassOfPrint { get; set; }
 
 
         //Relational

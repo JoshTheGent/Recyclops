@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Recyclops.EntityFrameworkCore;
 
 namespace Recyclops.Migrations
 {
     [DbContext(typeof(RecyclopsDbContext))]
-    partial class RecyclopsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191128073659_AddURLToPrintableOrder")]
+    partial class AddURLToPrintableOrder
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
