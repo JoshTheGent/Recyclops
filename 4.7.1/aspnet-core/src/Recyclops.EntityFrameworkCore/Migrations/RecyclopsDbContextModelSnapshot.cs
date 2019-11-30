@@ -944,8 +944,12 @@ namespace Recyclops.Migrations
 
                     b.Property<int>("AccessFailedCount");
 
+                    b.Property<string>("Address");
+
                     b.Property<string>("AuthenticationSource")
                         .HasMaxLength(64);
+
+                    b.Property<string>("City");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -1009,6 +1013,8 @@ namespace Recyclops.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasMaxLength(128);
 
+                    b.Property<string>("State");
+
                     b.Property<string>("Surname")
                         .IsRequired()
                         .HasMaxLength(64);
@@ -1018,6 +1024,8 @@ namespace Recyclops.Migrations
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasMaxLength(256);
+
+                    b.Property<string>("Zip");
 
                     b.HasKey("Id");
 
@@ -1062,11 +1070,46 @@ namespace Recyclops.Migrations
 
                     b.Property<int>("State");
 
+                    b.Property<string>("URL");
+
                     b.Property<string>("Zip");
 
                     b.HasKey("Id");
 
                     b.ToTable("LocationSource");
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.Order.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<long>("ClientId");
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<bool>("IsComplete");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<double>("TotalCost");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.ToTable("Order");
                 });
 
             modelBuilder.Entity("Recyclops.Domains.Plastic.Plastic", b =>
@@ -1106,7 +1149,79 @@ namespace Recyclops.Migrations
                     b.ToTable("Plastic");
                 });
 
-            modelBuilder.Entity("Recyclops.Domains.PrintableObjects.PrintableObjects", b =>
+            modelBuilder.Entity("Recyclops.Domains.PlasticOrder.PlasticOrder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<double>("DerivedTotal");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<int>("OrderId");
+
+                    b.Property<int>("PlasticSpoolId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("PlasticSpoolId");
+
+                    b.ToTable("PlasticOrder");
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.PlasticSpool.PlasticSpool", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<double>("ManufactureCost");
+
+                    b.Property<int>("Mass");
+
+                    b.Property<int>("PlasticId");
+
+                    b.Property<double>("SellValue");
+
+                    b.Property<TimeSpan>("TimeToManufacture");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlasticId");
+
+                    b.ToTable("PlasticSpool");
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.PrintableObject.PrintableObject", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1128,9 +1243,56 @@ namespace Recyclops.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<int>("PlasticSpoolId");
+
+                    b.Property<double>("PrintCost");
+
+                    b.Property<TimeSpan>("PrintTime");
+
+                    b.Property<double>("SellValue");
+
+                    b.Property<string>("URL");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("PlasticSpoolId");
+
                     b.ToTable("PrintableObjects");
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.PrintableOrder.PrintableOrder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationTime");
+
+                    b.Property<long?>("CreatorUserId");
+
+                    b.Property<long?>("DeleterUserId");
+
+                    b.Property<DateTime?>("DeletionTime");
+
+                    b.Property<double>("DerivedTotal");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<DateTime?>("LastModificationTime");
+
+                    b.Property<long?>("LastModifierUserId");
+
+                    b.Property<int>("OrderId");
+
+                    b.Property<int>("PrintableObjectId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("PrintableObjectId");
+
+                    b.ToTable("PrintableOrder");
                 });
 
             modelBuilder.Entity("Recyclops.MultiTenancy.Tenant", b =>
@@ -1333,11 +1495,61 @@ namespace Recyclops.Migrations
                         .HasForeignKey("LastModifierUserId");
                 });
 
+            modelBuilder.Entity("Recyclops.Domains.Order.Order", b =>
+                {
+                    b.HasOne("Recyclops.Authorization.Users.User", "Client")
+                        .WithMany("Orders")
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("Recyclops.Domains.Plastic.Plastic", b =>
                 {
                     b.HasOne("Recyclops.Domains.LocationSource.LocationSource", "LocationSource")
                         .WithMany("Plastics")
                         .HasForeignKey("LocationSourceId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.PlasticOrder.PlasticOrder", b =>
+                {
+                    b.HasOne("Recyclops.Domains.Order.Order", "Order")
+                        .WithMany("PlasticOrders")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Recyclops.Domains.PlasticSpool.PlasticSpool", "PlasticSpool")
+                        .WithMany("PlasticOrders")
+                        .HasForeignKey("PlasticSpoolId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.PlasticSpool.PlasticSpool", b =>
+                {
+                    b.HasOne("Recyclops.Domains.Plastic.Plastic", "Plastic")
+                        .WithMany("PlasticSpools")
+                        .HasForeignKey("PlasticId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.PrintableObject.PrintableObject", b =>
+                {
+                    b.HasOne("Recyclops.Domains.PlasticSpool.PlasticSpool", "PlasticSpool")
+                        .WithMany("PrintableObjects")
+                        .HasForeignKey("PlasticSpoolId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Recyclops.Domains.PrintableOrder.PrintableOrder", b =>
+                {
+                    b.HasOne("Recyclops.Domains.Order.Order", "Order")
+                        .WithMany("PrintableOrders")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Recyclops.Domains.PrintableObject.PrintableObject", "PrintableObject")
+                        .WithMany("PrintableOrders")
+                        .HasForeignKey("PrintableObjectId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

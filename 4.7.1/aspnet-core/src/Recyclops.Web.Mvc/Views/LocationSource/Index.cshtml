@@ -1,4 +1,5 @@
-﻿@using Recyclops.Web.Startup
+﻿@using Abp.Extensions
+@using Recyclops.Web.Startup
 @model List<Recyclops.Web.Models.LocationSource.LocationSourceViewModel>
 @{
     ViewBag.CurrentPageName = PageNames.LocationSource; // The menu item will be active for this page.
@@ -9,8 +10,6 @@
         <script src="~/view-resources/Views/LocationSource/Index.js" asp-append-version="true"></script>
     </environment>
 }
-
-
 
 <div class="row clearfix">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -30,8 +29,10 @@
                     </li>
                 </ul>
             </div>
+            
+
             <div id="tableContainer" class="body table-responsive">
-                <table class="table">
+                <table id="LocationTable" class="table">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -56,15 +57,28 @@
                                     <i class="material-icons">menu</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
+                                    @if (!item.URL.IsNullOrWhiteSpace())
+                                    {
+                                        <li>
+                                            <a href="@item.URL" class="dropdown-item waves-effect waves-block nav-tag" data-tag-id="@item.Id">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </li>
+                                    }
+                                    <li>
+                                        <a href="https://www.google.com/maps/search/@item.Address,@item.City,@item.State,@item.Zip" target="_blank" class="dropdown-item waves-effect waves-block nav-tag" data-tag-id="@item.Id">
+                                            <i class="fas fa-map-pin"></i>
+                                        </a>
+                                    </li>
                                     <li>
 
                                         <a href="#" class="dropdown-item waves-effect waves-block edit-tag" data-tag-id="@item.Id">
-                                            <i class="fa fa-pencil-alt"></i>@L("Edit")
+                                            <i class="fa fa-pencil-alt"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="dropdown-item waves-effect waves-block delete-tag" data-tag-id="@item.Id">
-                                            <i class="fa fa-times"></i>@L("Delete")
+                                            <i class="fa fa-times"></i>
                                         </a>
                                     </li>
                                 </ul>

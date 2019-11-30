@@ -1,4 +1,6 @@
-﻿using Abp.Auditing;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Abp.Auditing;
 using Abp.Domain.Entities.Auditing;
 
 namespace Recyclops.Domains.Plastic
@@ -25,6 +27,8 @@ namespace Recyclops.Domains.Plastic
 
         //Navigation
         public LocationSource.LocationSource LocationSource { get; set; }
+
+        public IList<PlasticSpool.PlasticSpool> PlasticSpools { get; set; }
 
 
         #endregion

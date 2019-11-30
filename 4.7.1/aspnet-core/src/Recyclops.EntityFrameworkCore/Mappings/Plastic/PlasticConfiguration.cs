@@ -10,6 +10,7 @@ namespace Recyclops.Mappings.Plastic
             builder.HasKey(x => x.Id);
             builder.ToTable("Plastic");
             builder.HasOne(x => x.LocationSource).WithMany(x => x.Plastics).HasForeignKey(x => x.LocationSourceId);
+            builder.HasMany(x => x.PlasticSpools).WithOne(x => x.Plastic).HasForeignKey(x => x.PlasticId);
 
         }
     }

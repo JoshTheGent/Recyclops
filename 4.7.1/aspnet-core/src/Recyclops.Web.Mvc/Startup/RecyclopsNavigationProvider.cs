@@ -27,10 +27,17 @@ namespace Recyclops.Web.Startup
                         url: "About",
                         icon: "info"
                     )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("QuestionsConcerns"),
+                        url: "QuestionsConcerns",
+                        icon: "info"
+                    )
                 ).AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
-                        "Admin",
-                        L("Admin"),
+                        "Management",
+                        L("Management"),
                         icon: "menu"
                     ).AddItem(
                         new MenuItemDefinition(
@@ -41,12 +48,30 @@ namespace Recyclops.Web.Startup
                         )
                     ).AddItem(
                         new MenuItemDefinition(
+                            PageNames.PlasticSpool,
+                            L("PlasticSpool"),
+                            url: "PlasticSpool",
+                            icon: "business"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.PrintableObject,
+                            L("PrintableObject"),
+                            url: "PrintableObject",
+                            icon: "business"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
                             PageNames.LocationSource,
                             L("LocationSources"),
                             url: "LocationSource",
                             icon: "business"
 
-                        )
+                        ))).AddItem( // Menu items below is just for demonstration!
+                    new MenuItemDefinition(
+                        "Admin",
+                        L("Admin"),
+                        icon: "menu"
                     ).AddItem(
                         new MenuItemDefinition(
                             PageNames.Tenants,

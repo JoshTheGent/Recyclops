@@ -1,4 +1,22 @@
-﻿$("#addButton").on('click', function (e) {
+﻿
+$("#PlasticTable").DataTable({
+    "language": {
+        emptyTable: "No Content to Display",
+        search: "_INPUT_",
+        searchPlaceholder: "Search",
+        paginate: {
+            first: "<i class='fa fa-step-backward'></i>",
+            previous: "<i class='fa fa-caret-left'></i>",
+            next: "<i class='fa fa-caret-right'></i>",
+            last: "<i class='fa fa-step-forward'></i>"
+        }
+    },
+    "columnDefs": [{ targets: 'no-sort', orderable: false }],
+    "order": [[1, "asc"]]
+});
+
+
+$("#addButton").on('click', function (e) {
     e.preventDefault();
     $.ajax({
         url: abp.appPath + "Plastic/LoadForm",
@@ -35,7 +53,7 @@ $("#tableContainer").on('click', ".edit-tag", function (e) {
 $("#tableContainer").on('click', ".delete-tag", function () {
     var tagId = $(this).attr("data-tag-id");
     abp.message.confirm(
-        abp.utils.formatString(abp.localization.localize("AreYouSureWantToDelete", "Recyclops"), "this Location Source"),
+        abp.utils.formatString(abp.localization.localize("AreYouSureWantToDelete", "Recyclops"), "this Plastic"),
         function (isConfirmed) {
             if (isConfirmed) {
                 abp.ajax({
