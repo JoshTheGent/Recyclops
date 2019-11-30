@@ -14880,3 +14880,1018 @@ DEBUG 2019-11-28 02:22:45,642 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub -
 DEBUG 2019-11-28 02:22:45,687 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: ERTByNBQEyEFKtG0gu10Uw
 DEBUG 2019-11-28 02:22:48,845 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: ERTByNBQEyEFKtG0gu10Uw
 INFO  2019-11-28 02:22:48,865 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3455.3527ms 101 
+DEBUG 2019-11-30 14:23:18,874 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-30 14:23:19,130 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-11-30 14:23:19,145 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.Web.Startup.RecyclopsWebMvcModule, Recyclops.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,147 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsWebCoreModule, Recyclops.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsApplicationModule, Recyclops.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsCoreModule, Recyclops.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,148 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,149 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.EntityFrameworkCore.RecyclopsEntityFrameworkModule, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,150 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:19,153 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-11-30 14:23:19,231 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 14:23:19,231 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 14:23:19,231 [1    ] o.Configuration.LanguageManagementConfig - Converted Recyclops (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 14:23:19,231 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 14:23:19,546 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Recyclops.EntityFrameworkCore.RecyclopsDbContext, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 14:23:20,445 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-30 14:23:20,479 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-30 14:23:20,488 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-30 14:23:20,493 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Recyclops
+DEBUG 2019-11-30 14:23:20,497 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-30 14:23:20,665 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-30 14:23:20,765 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-11-30 14:23:20,802 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2019-11-30 14:23:20,802 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-11-30 14:23:20,807 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.CreateUserDto
+DEBUG 2019-11-30 14:23:20,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.UserDto
+DEBUG 2019-11-30 14:23:20,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-30 14:23:20,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-30 14:23:20,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Roles.Dto.PermissionDto
+DEBUG 2019-11-30 14:23:20,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Plastic.Dto.PlasticDto
+DEBUG 2019-11-30 14:23:20,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-30 14:23:20,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-30 14:23:20,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.LocationSource.Dto.LocationSourceDto
+DEBUG 2019-11-30 14:23:20,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-11-30 14:23:20,809 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-11-30 14:23:24,386 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-11-30 14:23:27,419 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed out.
+INFO  2019-11-30 14:23:27,423 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.External signed out.
+INFO  2019-11-30 14:23:27,425 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.TwoFactorUserId signed out.
+INFO  2019-11-30 14:23:27,432 [10   ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: No principal.
+INFO  2019-11-30 14:23:27,933 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc)
+WARN  2019-11-30 14:23:28,236 [10   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-11-30 14:23:28,244 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-11-30 14:23:28,255 [10   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-11-30 14:23:28,282 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-11-30 14:23:28,286 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) in 347.6358ms
+INFO  2019-11-30 14:23:28,344 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3960.9282ms 302 
+INFO  2019-11-30 14:23:28,352 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2F  
+INFO  2019-11-30 14:23:28,385 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc)
+INFO  2019-11-30 14:23:30,633 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-11-30 14:23:30,643 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.243ms.
+INFO  2019-11-30 14:23:30,856 [11   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-11-30 14:23:31,334 [11   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 517.1088ms.
+INFO  2019-11-30 14:23:31,341 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc) in 2953.6964ms
+INFO  2019-11-30 14:23:31,355 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3003.0232ms 200 text/html; charset=utf-8
+INFO  2019-11-30 14:23:31,413 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107206007664964  
+INFO  2019-11-30 14:23:31,416 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107206007664964  
+INFO  2019-11-30 14:23:31,418 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637107206113178310  
+INFO  2019-11-30 14:23:31,431 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 14:23:31,442 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 14:23:31,445 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 14:23:31,460 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-11-30 14:23:31,461 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.1777ms 200 application/javascript
+INFO  2019-11-30 14:23:31,474 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 14:23:31,535 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 90.8554ms.
+INFO  2019-11-30 14:23:31,540 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 14:23:31,545 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 111.5204ms
+INFO  2019-11-30 14:23:31,547 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.4327ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 14:23:31,571 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 95.0208ms.
+INFO  2019-11-30 14:23:31,573 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 14:23:31,575 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 128.6915ms
+INFO  2019-11-30 14:23:31,576 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 163.0924ms 200 application/x-javascript
+DEBUG 2019-11-30 15:56:00,956 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-30 15:56:01,141 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-11-30 15:56:01,155 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.Web.Startup.RecyclopsWebMvcModule, Recyclops.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsWebCoreModule, Recyclops.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsApplicationModule, Recyclops.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsCoreModule, Recyclops.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.EntityFrameworkCore.RecyclopsEntityFrameworkModule, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:01,162 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-11-30 15:56:01,240 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 15:56:01,240 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 15:56:01,240 [1    ] o.Configuration.LanguageManagementConfig - Converted Recyclops (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 15:56:01,240 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 15:56:01,567 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Recyclops.EntityFrameworkCore.RecyclopsDbContext, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 15:56:02,504 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-30 15:56:02,538 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-30 15:56:02,549 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-30 15:56:02,554 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Recyclops
+DEBUG 2019-11-30 15:56:02,558 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-30 15:56:02,736 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-30 15:56:02,900 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-11-30 15:56:02,949 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2019-11-30 15:56:02,950 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-11-30 15:56:02,958 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.CreateUserDto
+DEBUG 2019-11-30 15:56:02,958 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.UserDto
+DEBUG 2019-11-30 15:56:02,959 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-30 15:56:02,959 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-30 15:56:02,959 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Roles.Dto.PermissionDto
+DEBUG 2019-11-30 15:56:02,960 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PrintableObject.Dto.PrintableObjectDto
+DEBUG 2019-11-30 15:56:02,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Plastic.Dto.PlasticDto
+DEBUG 2019-11-30 15:56:02,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PlasticSpool.Dto.PlasticSpoolDto
+DEBUG 2019-11-30 15:56:02,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-30 15:56:02,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-30 15:56:02,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.LocationSource.Dto.LocationSourceDto
+DEBUG 2019-11-30 15:56:02,961 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-11-30 15:56:02,962 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-11-30 15:56:08,353 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-11-30 15:56:11,653 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc)
+WARN  2019-11-30 15:56:11,950 [16   ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 42
+   at Abp.Authorization.AuthorizationHelper.CheckPermissions(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 107
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type) in D:\Github\aspnetboilerplate\src\Abp\Authorization\AuthorizationHelper.cs:line 56
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context) in D:\Github\aspnetboilerplate\src\Abp.AspNetCore\AspNetCore\Mvc\Authorization\AbpAuthorizationFilter.cs:line 53
+INFO  2019-11-30 15:56:11,958 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2019-11-30 15:56:11,968 [16   ] Microsoft.AspNetCore.Mvc.ChallengeResult - Executing ChallengeResult with authentication schemes ().
+INFO  2019-11-30 15:56:11,988 [16   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-11-30 15:56:11,992 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) in 334.5017ms
+INFO  2019-11-30 15:56:12,038 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3691.3397ms 302 
+INFO  2019-11-30 15:56:12,042 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2F  
+INFO  2019-11-30 15:56:12,071 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc)
+INFO  2019-11-30 15:56:14,249 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc) with arguments (, /, ) - Validation state: Valid
+INFO  2019-11-30 15:56:14,258 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.3077ms.
+INFO  2019-11-30 15:56:14,472 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-11-30 15:56:14,981 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 550.0744ms.
+INFO  2019-11-30 15:56:14,987 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc) in 2914.3781ms
+INFO  2019-11-30 15:56:14,999 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 2956.5798ms 200 text/html; charset=utf-8
+INFO  2019-11-30 15:56:15,071 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107261629019219  
+INFO  2019-11-30 15:56:15,072 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107261629019219  
+INFO  2019-11-30 15:56:15,074 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637107261749627969  
+INFO  2019-11-30 15:56:15,088 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 15:56:15,094 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 15:56:15,098 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 15:56:15,114 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-11-30 15:56:15,116 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 41.4898ms 200 application/javascript
+INFO  2019-11-30 15:56:15,128 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-11-30 15:56:15,167 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 15:56:15,201 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 100.8541ms.
+INFO  2019-11-30 15:56:15,208 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:56:15,213 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 123.6645ms
+INFO  2019-11-30 15:56:15,215 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 144.5824ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:56:15,241 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 111.5857ms.
+INFO  2019-11-30 15:56:15,244 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 15:56:15,247 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 150.5624ms
+INFO  2019-11-30 15:56:15,248 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 178.8883ms 200 application/x-javascript
+INFO  2019-11-30 15:59:11,546 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/Account/Login application/x-www-form-urlencoded 256
+INFO  2019-11-30 15:59:11,557 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing action Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc)
+INFO  2019-11-30 15:59:11,630 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc) with arguments (Recyclops.Web.Models.Account.LoginViewModel, /, ) - Validation state: Valid
+INFO  2019-11-30 15:59:12,127 [30   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2019-11-30 15:59:12,131 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.JsonResult in 500.3857ms.
+INFO  2019-11-30 15:59:12,147 [30   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-11-30 15:59:12,156 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.AccountController.Login (Recyclops.Web.Mvc) in 597.6548ms
+INFO  2019-11-30 15:59:12,158 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 611.5373ms 200 application/json; charset=utf-8
+INFO  2019-11-30 15:59:12,194 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-11-30 15:59:12,234 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 15:59:12,263 [22   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-11-30 15:59:12,970 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 15:59:13,028 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 55.4317ms.
+INFO  2019-11-30 15:59:13,057 [31   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 15:59:13,205 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 15:59:13,451 [29   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 395.405ms.
+INFO  2019-11-30 15:59:13,457 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) in 1220.1944ms
+INFO  2019-11-30 15:59:13,458 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1264.5692ms 200 text/html; charset=utf-8
+INFO  2019-11-30 15:59:13,710 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107261629019219  
+INFO  2019-11-30 15:59:13,711 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107261629019219  
+INFO  2019-11-30 15:59:13,719 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 15:59:13,722 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 15:59:13,724 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 15:59:13,728 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 15:59:13,730 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.2062ms.
+INFO  2019-11-30 15:59:13,732 [22   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 15:59:13,734 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 7.3152ms
+INFO  2019-11-30 15:59:13,736 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 26.5806ms 200 application/x-javascript
+WARN  2019-11-30 15:59:13,752 [25   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 15:59:13,759 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 35.7693ms.
+INFO  2019-11-30 15:59:13,761 [25   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:59:13,763 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 42.6532ms
+INFO  2019-11-30 15:59:13,765 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 53.7193ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:59:13,836 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 15:59:13,872 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 35.4943ms 200 application/json
+INFO  2019-11-30 15:59:13,977 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=UV_nUWCtCys64FO5SjqYZw  
+INFO  2019-11-30 15:59:14,134 [31   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 15:59:14,162 [31   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"UV_nUWCtCys64FO5SjqYZw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T15:59:14.155558-06:00","Properties":{}}
+DEBUG 2019-11-30 15:59:14,208 [31   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: UV_nUWCtCys64FO5SjqYZw
+INFO  2019-11-30 15:59:16,501 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/PlasticSpool  
+INFO  2019-11-30 15:59:16,508 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "PlasticSpool", area = ""}. Executing action Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 15:59:16,690 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 15:59:16,867 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 175.4531ms.
+INFO  2019-11-30 15:59:16,887 [28   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 15:59:16,893 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpools' in localization source 'Recyclops'!
+WARN  2019-11-30 15:59:16,911 [25   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 15:59:16,923 [25   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 37.662ms.
+INFO  2019-11-30 15:59:16,925 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc) in 414.9329ms
+INFO  2019-11-30 15:59:16,926 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 425.9018ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 15:59:16,969 [28   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: UV_nUWCtCys64FO5SjqYZw
+INFO  2019-11-30 15:59:16,982 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107261629019219  
+INFO  2019-11-30 15:59:16,984 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107261629019219  
+INFO  2019-11-30 15:59:16,987 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3009.685ms 101 
+INFO  2019-11-30 15:59:16,994 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 15:59:16,997 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 15:59:17,000 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 15:59:17,002 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 15:59:17,003 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0319ms.
+INFO  2019-11-30 15:59:17,006 [25   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 15:59:17,008 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.4524ms
+INFO  2019-11-30 15:59:17,009 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.6081ms 200 application/x-javascript
+WARN  2019-11-30 15:59:17,019 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 15:59:17,025 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 26.1465ms.
+INFO  2019-11-30 15:59:17,028 [28   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:59:17,030 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 33.7519ms
+INFO  2019-11-30 15:59:17,033 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.1149ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:59:17,090 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/PlasticSpool/Index.js?v=8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U  
+INFO  2019-11-30 15:59:17,092 [26   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PlasticSpool/Index.js'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\view-resources\Views\PlasticSpool\Index.js'
+INFO  2019-11-30 15:59:17,094 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.7885ms 200 application/javascript
+INFO  2019-11-30 15:59:17,119 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 15:59:17,126 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.3532ms 200 application/json
+INFO  2019-11-30 15:59:17,165 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=QZSdSZkSnROZdIS2yz3MiQ  
+INFO  2019-11-30 15:59:17,213 [25   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 15:59:17,214 [25   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"QZSdSZkSnROZdIS2yz3MiQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T15:59:17.2144692-06:00","Properties":{}}
+DEBUG 2019-11-30 15:59:17,214 [25   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: QZSdSZkSnROZdIS2yz3MiQ
+INFO  2019-11-30 15:59:41,876 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Plastic  
+INFO  2019-11-30 15:59:41,886 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Plastic", area = ""}. Executing action Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 15:59:42,245 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 15:59:42,275 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 29.1035ms.
+INFO  2019-11-30 15:59:42,286 [30   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 15:59:42,309 [28   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 15:59:42,324 [28   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 42.7949ms.
+INFO  2019-11-30 15:59:42,326 [28   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc) in 438.3437ms
+INFO  2019-11-30 15:59:42,327 [28   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 451.0771ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 15:59:42,334 [25   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: QZSdSZkSnROZdIS2yz3MiQ
+INFO  2019-11-30 15:59:42,341 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25177.763ms 101 
+INFO  2019-11-30 15:59:42,380 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107261629019219  
+INFO  2019-11-30 15:59:42,390 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107261629019219  
+INFO  2019-11-30 15:59:42,397 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 15:59:42,401 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 15:59:42,404 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 15:59:42,407 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 15:59:42,409 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0529ms.
+INFO  2019-11-30 15:59:42,411 [30   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 15:59:42,416 [30   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.964ms
+INFO  2019-11-30 15:59:42,423 [30   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 39.0333ms 200 application/x-javascript
+WARN  2019-11-30 15:59:42,431 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 15:59:42,437 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 34.4225ms.
+INFO  2019-11-30 15:59:42,439 [22   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:59:42,444 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 41.7319ms
+INFO  2019-11-30 15:59:42,445 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 62.8031ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 15:59:42,635 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 15:59:42,644 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.8063ms 200 application/json
+INFO  2019-11-30 15:59:42,721 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=KRJuGmMGP5CQpVLVci8enA  
+INFO  2019-11-30 15:59:42,766 [22   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 15:59:42,766 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"KRJuGmMGP5CQpVLVci8enA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T15:59:42.7666678-06:00","Properties":{}}
+DEBUG 2019-11-30 15:59:42,767 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: KRJuGmMGP5CQpVLVci8enA
+INFO  2019-11-30 16:00:04,407 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Plastic/LoadForm application/html 
+INFO  2019-11-30 16:00:04,417 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "Plastic", area = ""}. Executing action Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:00:04,420 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc) with arguments () - Validation state: Valid
+INFO  2019-11-30 16:00:04,569 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 147.8532ms.
+INFO  2019-11-30 16:00:04,585 [34   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _Modal.
+INFO  2019-11-30 16:00:04,711 [34   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _Modal executed in 131.8735ms.
+INFO  2019-11-30 16:00:04,713 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc) in 294.2625ms
+INFO  2019-11-30 16:00:04,714 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 307.9025ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:00:04,723 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/Plastic/_Modal.js?v=N-M7_r5Tm6UW7QVyXPLOzy7Cbp7GEt1CEa4XW4ehE_Y  
+INFO  2019-11-30 16:00:04,726 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Plastic/_Modal.js'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\view-resources\Views\Plastic\_Modal.js'
+INFO  2019-11-30 16:00:04,727 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3.9842ms 200 application/javascript
+INFO  2019-11-30 16:00:27,898 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Plastic/LoadForm?id=3 application/html 
+INFO  2019-11-30 16:00:27,906 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "Plastic", area = ""}. Executing action Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:00:27,909 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc) with arguments (3) - Validation state: Valid
+INFO  2019-11-30 16:00:27,957 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 46.259ms.
+INFO  2019-11-30 16:00:27,963 [38   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _Modal.
+INFO  2019-11-30 16:00:27,967 [38   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _Modal executed in 4.2307ms.
+INFO  2019-11-30 16:00:27,969 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc) in 61.1809ms
+INFO  2019-11-30 16:00:27,970 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 72.4266ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:00:58,160 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Plastic/LoadForm application/html 
+INFO  2019-11-30 16:00:58,167 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "Plastic", area = ""}. Executing action Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:00:58,170 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc) with arguments () - Validation state: Valid
+INFO  2019-11-30 16:00:58,177 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 5.7243ms.
+INFO  2019-11-30 16:00:58,182 [39   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _Modal.
+INFO  2019-11-30 16:00:58,185 [39   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _Modal executed in 2.9298ms.
+INFO  2019-11-30 16:00:58,187 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticController.LoadForm (Recyclops.Web.Mvc) in 17.9687ms
+INFO  2019-11-30 16:00:58,188 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.6993ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:01:19,874 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Plastic  
+INFO  2019-11-30 16:01:19,882 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Plastic", area = ""}. Executing action Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:01:19,885 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:01:19,895 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.78ms.
+INFO  2019-11-30 16:01:19,901 [39   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:01:19,918 [37   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 16:01:19,927 [37   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 25.0612ms.
+INFO  2019-11-30 16:01:19,928 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc) in 44.9156ms
+INFO  2019-11-30 16:01:19,930 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 56.8121ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:01:19,936 [41   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: KRJuGmMGP5CQpVLVci8enA
+INFO  2019-11-30 16:01:19,937 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 97216.5901ms 101 
+INFO  2019-11-30 16:01:19,992 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107261629019219  
+INFO  2019-11-30 16:01:19,998 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107261629019219  
+INFO  2019-11-30 16:01:20,006 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:01:20,008 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:01:20,010 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0698ms.
+INFO  2019-11-30 16:01:20,013 [39   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:01:20,015 [39   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 7.2298ms
+INFO  2019-11-30 16:01:20,017 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:01:20,018 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 27.8233ms 200 application/x-javascript
+INFO  2019-11-30 16:01:20,022 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-11-30 16:01:20,039 [34   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 16:01:20,045 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 20.4515ms.
+INFO  2019-11-30 16:01:20,046 [34   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:01:20,048 [34   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 28.6175ms
+INFO  2019-11-30 16:01:20,050 [34   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 59.2681ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:01:20,202 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/Plastic/Index.js?v=cCQsWZ0ZuHSw_1v0bXXVXeD3mzKvHpvE3vgodS8GVCI  
+INFO  2019-11-30 16:01:20,206 [37   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Plastic/Index.js'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\view-resources\Views\Plastic\Index.js'
+INFO  2019-11-30 16:01:20,207 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.5882ms 200 application/javascript
+INFO  2019-11-30 16:01:20,241 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:01:20,249 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.2981ms 200 application/json
+INFO  2019-11-30 16:01:20,300 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=2sYJs6bk4R6XySfpv8w0TA  
+INFO  2019-11-30 16:01:20,415 [37   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:01:20,415 [37   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"2sYJs6bk4R6XySfpv8w0TA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:01:20.4157304-06:00","Properties":{}}
+DEBUG 2019-11-30 16:01:20,415 [37   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 2sYJs6bk4R6XySfpv8w0TA
+INFO  2019-11-30 16:01:20,428 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+INFO  2019-11-30 16:01:20,433 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-11-30 16:01:20,435 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.6133ms 200 image/x-icon
+INFO  2019-11-30 16:01:47,566 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/Plastic/Delete application/x-www-form-urlencoded 4
+INFO  2019-11-30 16:01:47,576 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Delete", controller = "Plastic", area = ""}. Executing action Recyclops.Web.Controllers.PlasticController.Delete (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:01:47,581 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticController.Delete (Recyclops.Web.Mvc) with arguments (3) - Validation state: Valid
+INFO  2019-11-30 16:01:47,607 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticController.Delete (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 24.4117ms.
+INFO  2019-11-30 16:01:47,801 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-11-30 16:01:47,811 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticController.Delete (Recyclops.Web.Mvc) in 233.3862ms
+INFO  2019-11-30 16:01:47,814 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 246.9777ms 200 application/json; charset=utf-8
+INFO  2019-11-30 16:01:50,921 [22   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/Plastic  
+INFO  2019-11-30 16:01:50,928 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Plastic", area = ""}. Executing action Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:01:50,931 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:01:50,937 [22   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.2203ms.
+INFO  2019-11-30 16:01:50,944 [34   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:01:50,959 [52   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 16:01:50,967 [52   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 22.5971ms.
+INFO  2019-11-30 16:01:50,969 [52   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticController.Index (Recyclops.Web.Mvc) in 38.6796ms
+INFO  2019-11-30 16:01:50,970 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.3953ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:01:50,977 [51   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 2sYJs6bk4R6XySfpv8w0TA
+INFO  2019-11-30 16:01:50,981 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30682.1679ms 101 
+INFO  2019-11-30 16:01:51,014 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107261629019219  
+INFO  2019-11-30 16:01:51,015 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107261629019219  
+INFO  2019-11-30 16:01:51,022 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:01:51,025 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:01:51,026 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0348ms.
+INFO  2019-11-30 16:01:51,028 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:01:51,029 [37   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:01:51,033 [37   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 7.4108ms
+INFO  2019-11-30 16:01:51,036 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 22.1206ms 200 application/x-javascript
+INFO  2019-11-30 16:01:51,038 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-11-30 16:01:51,050 [51   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+INFO  2019-11-30 16:01:51,056 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 15.1289ms.
+INFO  2019-11-30 16:01:51,058 [51   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:01:51,060 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 29.9479ms
+INFO  2019-11-30 16:01:51,062 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.7989ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:01:51,219 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/Plastic/Index.js?v=cCQsWZ0ZuHSw_1v0bXXVXeD3mzKvHpvE3vgodS8GVCI  
+INFO  2019-11-30 16:01:51,226 [51   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Plastic/Index.js was not modified
+INFO  2019-11-30 16:01:51,228 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 8.3788ms 304 application/javascript
+INFO  2019-11-30 16:01:51,266 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:01:51,273 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.4908ms 200 application/json
+INFO  2019-11-30 16:01:51,351 [37   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=OO7tu_hCvHFgc55dyzAhUA  
+INFO  2019-11-30 16:01:51,408 [54   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:01:51,408 [54   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"OO7tu_hCvHFgc55dyzAhUA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:01:51.4086196-06:00","Properties":{}}
+DEBUG 2019-11-30 16:01:51,408 [54   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: OO7tu_hCvHFgc55dyzAhUA
+INFO  2019-11-30 16:01:51,419 [54   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+INFO  2019-11-30 16:01:51,422 [52   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-11-30 16:01:51,424 [52   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.8357ms 200 image/x-icon
+DEBUG 2019-11-30 16:10:15,854 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-30 16:10:16,063 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-11-30 16:10:16,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.Web.Startup.RecyclopsWebMvcModule, Recyclops.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsWebCoreModule, Recyclops.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsApplicationModule, Recyclops.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsCoreModule, Recyclops.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,091 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.EntityFrameworkCore.RecyclopsEntityFrameworkModule, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,092 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:16,096 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-11-30 16:10:16,178 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:10:16,178 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:10:16,178 [1    ] o.Configuration.LanguageManagementConfig - Converted Recyclops (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:10:16,178 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:10:16,512 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Recyclops.EntityFrameworkCore.RecyclopsDbContext, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:10:17,459 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-30 16:10:17,487 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-30 16:10:17,496 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-30 16:10:17,500 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Recyclops
+DEBUG 2019-11-30 16:10:17,504 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-30 16:10:17,677 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-30 16:10:17,803 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-11-30 16:10:17,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2019-11-30 16:10:17,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-11-30 16:10:17,853 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.CreateUserDto
+DEBUG 2019-11-30 16:10:17,853 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.UserDto
+DEBUG 2019-11-30 16:10:17,853 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-30 16:10:17,854 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-30 16:10:17,854 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Roles.Dto.PermissionDto
+DEBUG 2019-11-30 16:10:17,854 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PrintableObject.Dto.PrintableObjectDto
+DEBUG 2019-11-30 16:10:17,855 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Plastic.Dto.PlasticDto
+DEBUG 2019-11-30 16:10:17,855 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PlasticSpool.Dto.PlasticSpoolDto
+DEBUG 2019-11-30 16:10:17,855 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-30 16:10:17,855 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-30 16:10:17,855 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.LocationSource.Dto.LocationSourceDto
+DEBUG 2019-11-30 16:10:17,855 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-11-30 16:10:17,855 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-11-30 16:10:22,611 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-11-30 16:10:26,095 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:10:26,141 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-11-30 16:10:26,851 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:10:26,916 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 61.4138ms.
+INFO  2019-11-30 16:10:27,147 [12   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:10:28,119 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:10:28,120 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:10:28,565 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1453.1118ms.
+INFO  2019-11-30 16:10:28,574 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) in 2475.8893ms
+INFO  2019-11-30 16:10:28,596 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5988.1697ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:10:28,887 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107270178049309  
+INFO  2019-11-30 16:10:28,889 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107270178049309  
+INFO  2019-11-30 16:10:28,927 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:10:28,935 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:10:28,965 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 16:10:28,995 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-11-30 16:10:29,108 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:10:29,108 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:10:29,135 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 168.4479ms.
+INFO  2019-11-30 16:10:29,141 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:10:29,145 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 216.196ms
+INFO  2019-11-30 16:10:29,147 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 258.9862ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:10:29,166 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 168.8114ms.
+INFO  2019-11-30 16:10:29,169 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:10:29,171 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 234.373ms
+INFO  2019-11-30 16:10:29,173 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 283.856ms 200 application/x-javascript
+INFO  2019-11-30 16:10:29,184 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:10:29,217 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.1784ms 200 application/json
+INFO  2019-11-30 16:10:29,308 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=OsAqjipfGCjFYMyr_qF8kQ  
+INFO  2019-11-30 16:10:29,519 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:10:29,547 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"OsAqjipfGCjFYMyr_qF8kQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:10:29.5402532-06:00","Properties":{}}
+DEBUG 2019-11-30 16:10:29,590 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: OsAqjipfGCjFYMyr_qF8kQ
+INFO  2019-11-30 16:10:34,616 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/PrintableObject  
+INFO  2019-11-30 16:10:34,631 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "PrintableObject", area = ""}. Executing action Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:10:34,791 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:10:34,947 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 153.8079ms.
+INFO  2019-11-30 16:10:34,957 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:10:34,965 [7    ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObjects' in localization source 'Recyclops'!
+WARN  2019-11-30 16:10:34,985 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:10:34,986 [13   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:10:34,999 [13   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 44.1278ms.
+INFO  2019-11-30 16:10:35,000 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc) in 368.1433ms
+INFO  2019-11-30 16:10:35,003 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 386.5691ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:10:35,058 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: OsAqjipfGCjFYMyr_qF8kQ
+INFO  2019-11-30 16:10:35,075 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5767.8391ms 101 
+INFO  2019-11-30 16:10:35,209 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107270178049309  
+INFO  2019-11-30 16:10:35,212 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107270178049309  
+INFO  2019-11-30 16:10:35,215 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/PrintableObject/Index.js  
+INFO  2019-11-30 16:10:35,222 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:10:35,226 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:10:35,228 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 16:10:35,232 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:10:35,235 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.3172ms.
+INFO  2019-11-30 16:10:35,236 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:10:35,240 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 9.7904ms
+INFO  2019-11-30 16:10:35,242 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.1692ms 404 
+INFO  2019-11-30 16:10:35,243 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.3173ms 200 application/x-javascript
+WARN  2019-11-30 16:10:35,262 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:10:35,262 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:10:35,270 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 40.195ms.
+INFO  2019-11-30 16:10:35,272 [15   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:10:35,275 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 49.8207ms
+INFO  2019-11-30 16:10:35,276 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.4306ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:10:35,316 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:10:35,318 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/PrintableObject/Index.js  
+INFO  2019-11-30 16:10:35,325 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.641ms 200 application/json
+INFO  2019-11-30 16:10:35,330 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 12.4196ms 404 
+INFO  2019-11-30 16:10:35,333 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=fPay0kmAKYyAxrWiHsTAHA  
+INFO  2019-11-30 16:10:35,373 [10   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:10:35,373 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"fPay0kmAKYyAxrWiHsTAHA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:10:35.3737592-06:00","Properties":{}}
+DEBUG 2019-11-30 16:10:35,374 [10   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: fPay0kmAKYyAxrWiHsTAHA
+INFO  2019-11-30 16:10:58,797 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/PrintableObject  
+INFO  2019-11-30 16:10:58,805 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "PrintableObject", area = ""}. Executing action Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:10:58,807 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:13:26,264 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 147449.4861ms.
+INFO  2019-11-30 16:13:26,286 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+DEBUG 2019-11-30 16:13:26,298 [24   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: fPay0kmAKYyAxrWiHsTAHA
+INFO  2019-11-30 16:13:26,301 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 170968.7186ms 101 
+INFO  2019-11-30 16:13:26,308 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-11-30 16:13:26,310 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.253ms 200 application/json
+WARN  2019-11-30 16:13:26,311 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObjects' in localization source 'Recyclops'!
+INFO  2019-11-30 16:13:26,317 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=sFq_dFhIUZrjk-8ICM7uiQ  
+INFO  2019-11-30 16:13:26,329 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:13:26,330 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"sFq_dFhIUZrjk-8ICM7uiQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:13:26.3301403-06:00","Properties":{}}
+WARN  2019-11-30 16:13:26,335 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:13:26,335 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:13:26,343 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 35.1243ms.
+INFO  2019-11-30 16:13:26,345 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PrintableObjectController.Index (Recyclops.Web.Mvc) in 147538.9024ms
+INFO  2019-11-30 16:13:26,347 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 147549.7168ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:13:26,356 [26   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: sFq_dFhIUZrjk-8ICM7uiQ
+INFO  2019-11-30 16:13:26,358 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 40.9263ms 101 
+INFO  2019-11-30 16:13:26,636 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107270178049309  
+INFO  2019-11-30 16:13:26,637 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107270178049309  
+INFO  2019-11-30 16:13:26,638 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/PrintableObject/Index.js  
+INFO  2019-11-30 16:13:26,645 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:13:26,647 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:13:26,649 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0532ms.
+INFO  2019-11-30 16:13:26,651 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:13:26,653 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.1352ms
+INFO  2019-11-30 16:13:26,655 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.1839ms 200 application/x-javascript
+INFO  2019-11-30 16:13:26,658 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:13:26,660 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 20.8342ms 404 
+INFO  2019-11-30 16:13:26,662 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-11-30 16:13:26,673 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:13:26,673 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:13:26,681 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 18.0798ms.
+INFO  2019-11-30 16:13:26,683 [10   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:13:26,685 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 25.5968ms
+INFO  2019-11-30 16:13:26,687 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.6026ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:13:26,746 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:13:26,748 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/PrintableObject/Index.js  
+INFO  2019-11-30 16:13:26,753 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.0309ms 404 
+INFO  2019-11-30 16:13:26,757 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 10.5759ms 200 application/json
+INFO  2019-11-30 16:13:26,766 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=srtRCE_-rqrF7dihK92ccw  
+INFO  2019-11-30 16:13:26,773 [24   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:13:26,773 [24   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"srtRCE_-rqrF7dihK92ccw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:13:26.7733083-06:00","Properties":{}}
+DEBUG 2019-11-30 16:13:26,773 [24   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: srtRCE_-rqrF7dihK92ccw
+INFO  2019-11-30 16:13:27,413 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+INFO  2019-11-30 16:13:27,435 [31   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-11-30 16:13:27,436 [31   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.3523ms 200 image/x-icon
+DEBUG 2019-11-30 16:17:48,189 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-30 16:17:48,267 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-11-30 16:17:48,285 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.Web.Startup.RecyclopsWebMvcModule, Recyclops.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsWebCoreModule, Recyclops.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsApplicationModule, Recyclops.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsCoreModule, Recyclops.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.EntityFrameworkCore.RecyclopsEntityFrameworkModule, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:48,296 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-11-30 16:17:48,378 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:17:48,378 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:17:48,378 [1    ] o.Configuration.LanguageManagementConfig - Converted Recyclops (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:17:48,378 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 16:17:48,668 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Recyclops.EntityFrameworkCore.RecyclopsDbContext, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 16:17:49,531 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-30 16:17:49,566 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-30 16:17:49,576 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-30 16:17:49,580 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Recyclops
+DEBUG 2019-11-30 16:17:49,584 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-30 16:17:49,743 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-30 16:17:49,854 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-11-30 16:17:49,898 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2019-11-30 16:17:49,898 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-11-30 16:17:49,903 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.CreateUserDto
+DEBUG 2019-11-30 16:17:49,904 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.UserDto
+DEBUG 2019-11-30 16:17:49,904 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-30 16:17:49,904 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-30 16:17:49,904 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Roles.Dto.PermissionDto
+DEBUG 2019-11-30 16:17:49,904 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PrintableObject.Dto.PrintableObjectDto
+DEBUG 2019-11-30 16:17:49,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Plastic.Dto.PlasticDto
+DEBUG 2019-11-30 16:17:49,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PlasticSpool.Dto.PlasticSpoolDto
+DEBUG 2019-11-30 16:17:49,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-30 16:17:49,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-30 16:17:49,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.LocationSource.Dto.LocationSourceDto
+DEBUG 2019-11-30 16:17:49,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-11-30 16:17:49,906 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-11-30 16:17:53,787 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-11-30 16:17:57,078 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:17:57,122 [6    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-11-30 16:17:57,784 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:17:57,849 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 61.3658ms.
+INFO  2019-11-30 16:17:58,083 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:17:59,002 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:17:59,003 [18   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:17:59,445 [19   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1400.0664ms.
+INFO  2019-11-30 16:17:59,455 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) in 2372.9241ms
+INFO  2019-11-30 16:17:59,480 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5698.2058ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:17:59,764 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107274698553584  
+INFO  2019-11-30 16:17:59,765 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107274698553584  
+INFO  2019-11-30 16:17:59,803 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:17:59,807 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:17:59,840 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 16:17:59,871 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-11-30 16:17:59,974 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:17:59,974 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:17:59,999 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 157.742ms.
+INFO  2019-11-30 16:18:00,006 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:18:00,010 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 205.2715ms
+INFO  2019-11-30 16:18:00,012 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 247.8009ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:18:00,029 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 155.9845ms.
+INFO  2019-11-30 16:18:00,031 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:18:00,034 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 224.4488ms
+INFO  2019-11-30 16:18:00,036 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 271.3592ms 200 application/x-javascript
+INFO  2019-11-30 16:18:00,048 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:18:00,091 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 43.3981ms 200 application/json
+INFO  2019-11-30 16:18:00,184 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=NSVPx9ocgvrirQx4NtuXuA  
+INFO  2019-11-30 16:18:00,385 [15   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:18:00,419 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"NSVPx9ocgvrirQx4NtuXuA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:18:00.4118433-06:00","Properties":{}}
+DEBUG 2019-11-30 16:18:00,462 [15   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: NSVPx9ocgvrirQx4NtuXuA
+INFO  2019-11-30 16:18:04,522 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/PlasticSpool  
+INFO  2019-11-30 16:18:04,534 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "PlasticSpool", area = ""}. Executing action Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:18:04,698 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:18:04,893 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 192.2171ms.
+INFO  2019-11-30 16:18:04,914 [6    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:18:04,920 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpools' in localization source 'Recyclops'!
+WARN  2019-11-30 16:18:04,938 [17   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:18:04,938 [17   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:18:04,951 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 38.4145ms.
+INFO  2019-11-30 16:18:04,953 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc) in 416.625ms
+INFO  2019-11-30 16:18:04,954 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 433.4339ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:18:04,996 [20   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: NSVPx9ocgvrirQx4NtuXuA
+INFO  2019-11-30 16:18:05,014 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107274698553584  
+INFO  2019-11-30 16:18:05,016 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107274698553584  
+INFO  2019-11-30 16:18:05,019 [20   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4834.4159ms 101 
+INFO  2019-11-30 16:18:05,026 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:18:05,029 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:18:05,031 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 16:18:05,033 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:18:05,036 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.5137ms.
+INFO  2019-11-30 16:18:05,038 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:18:05,040 [14   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 11.8184ms
+INFO  2019-11-30 16:18:05,043 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.3612ms 200 application/x-javascript
+WARN  2019-11-30 16:18:05,052 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:18:05,052 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:18:05,058 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 24.94ms.
+INFO  2019-11-30 16:18:05,060 [12   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:18:05,063 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 31.9653ms
+INFO  2019-11-30 16:18:05,066 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.694ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:18:05,113 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/PlasticSpool/Index.js?v=-NPf_rvQkIoSk5BAkLnawtxgM9zoVKg8TzpZjhXk-R0  
+INFO  2019-11-30 16:18:05,141 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/PlasticSpool/Index.js'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\view-resources\Views\PlasticSpool\Index.js'
+INFO  2019-11-30 16:18:05,144 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 29.6893ms 200 application/javascript
+INFO  2019-11-30 16:18:05,152 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:18:05,159 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.4607ms 200 application/json
+INFO  2019-11-30 16:18:05,200 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=LEJpEajQhY62Yq5DVPplqA  
+INFO  2019-11-30 16:18:05,287 [13   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:18:05,288 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"LEJpEajQhY62Yq5DVPplqA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:18:05.2882148-06:00","Properties":{}}
+DEBUG 2019-11-30 16:18:05,288 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: LEJpEajQhY62Yq5DVPplqA
+INFO  2019-11-30 16:18:09,483 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/PlasticSpool/LoadForm?id=1 application/html 
+INFO  2019-11-30 16:18:09,495 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "PlasticSpool", area = ""}. Executing action Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:18:09,510 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc) with arguments (1) - Validation state: Valid
+INFO  2019-11-30 16:18:09,556 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 44.6589ms.
+INFO  2019-11-30 16:18:09,568 [6    ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _Modal.
+INFO  2019-11-30 16:18:09,573 [6    ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _Modal executed in 7.5546ms.
+INFO  2019-11-30 16:18:09,574 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc) in 77.8242ms
+INFO  2019-11-30 16:18:09,578 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 94.8605ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:18:12,388 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/PlasticSpool/LoadForm application/html 
+INFO  2019-11-30 16:18:12,395 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "PlasticSpool", area = ""}. Executing action Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:18:12,398 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc) with arguments () - Validation state: Valid
+INFO  2019-11-30 16:18:12,400 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 0.1448ms.
+INFO  2019-11-30 16:18:12,405 [13   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _Modal.
+INFO  2019-11-30 16:18:12,407 [13   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _Modal executed in 1.5903ms.
+INFO  2019-11-30 16:18:12,408 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticSpoolController.LoadForm (Recyclops.Web.Mvc) in 11.3817ms
+INFO  2019-11-30 16:18:12,410 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.7336ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:18:19,104 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/PlasticSpool/Delete application/x-www-form-urlencoded 4
+INFO  2019-11-30 16:18:19,115 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Delete", controller = "PlasticSpool", area = ""}. Executing action Recyclops.Web.Controllers.PlasticSpoolController.Delete (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:18:19,152 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticSpoolController.Delete (Recyclops.Web.Mvc) with arguments (1) - Validation state: Valid
+INFO  2019-11-30 16:18:19,177 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticSpoolController.Delete (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 22.8648ms.
+INFO  2019-11-30 16:18:19,362 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-11-30 16:18:19,377 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticSpoolController.Delete (Recyclops.Web.Mvc) in 259.4662ms
+INFO  2019-11-30 16:18:19,379 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 274.8903ms 200 application/json; charset=utf-8
+INFO  2019-11-30 16:18:22,253 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/PlasticSpool  
+INFO  2019-11-30 16:18:22,260 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "PlasticSpool", area = ""}. Executing action Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:18:22,263 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:18:22,269 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.0986ms.
+INFO  2019-11-30 16:18:22,275 [14   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:18:22,276 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpools' in localization source 'Recyclops'!
+WARN  2019-11-30 16:18:22,290 [17   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:18:22,291 [17   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:18:22,298 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 23.1697ms.
+INFO  2019-11-30 16:18:22,300 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.PlasticSpoolController.Index (Recyclops.Web.Mvc) in 38.6839ms
+INFO  2019-11-30 16:18:22,302 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 48.6165ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:18:22,305 [19   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: LEJpEajQhY62Yq5DVPplqA
+INFO  2019-11-30 16:18:22,306 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17107.1094ms 101 
+INFO  2019-11-30 16:18:22,346 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107274698553584  
+INFO  2019-11-30 16:18:22,348 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107274698553584  
+INFO  2019-11-30 16:18:22,356 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:18:22,358 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:18:22,361 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:18:22,362 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.1581ms.
+INFO  2019-11-30 16:18:22,364 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:18:22,366 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 7.6825ms
+INFO  2019-11-30 16:18:22,368 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 16:18:22,370 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.9279ms 200 application/x-javascript
+WARN  2019-11-30 16:18:22,382 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:18:22,383 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:18:22,390 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 19.0278ms.
+INFO  2019-11-30 16:18:22,391 [15   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:18:22,393 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 30.4042ms
+INFO  2019-11-30 16:18:22,396 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.9373ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:18:22,596 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:18:22,602 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.1774ms 200 application/json
+INFO  2019-11-30 16:18:22,677 [7    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=53y4-4LSwrYDzQwW6ebasQ  
+INFO  2019-11-30 16:18:22,727 [6    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:18:22,727 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"53y4-4LSwrYDzQwW6ebasQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:18:22.727588-06:00","Properties":{}}
+DEBUG 2019-11-30 16:18:22,728 [6    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 53y4-4LSwrYDzQwW6ebasQ
+INFO  2019-11-30 16:18:22,750 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+INFO  2019-11-30 16:18:22,753 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-11-30 16:18:22,755 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.1397ms 200 image/x-icon
+INFO  2019-11-30 16:31:39,673 [44   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-11-30 16:31:39,817 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:31:39,819 [40   ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-11-30 16:31:39,820 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:31:39,826 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.2605ms.
+INFO  2019-11-30 16:31:39,832 [34   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:31:39,847 [47   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:31:39,847 [47   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:31:39,868 [47   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 34.8073ms.
+INFO  2019-11-30 16:31:39,869 [47   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) in 50.9099ms
+INFO  2019-11-30 16:31:39,871 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 197.9888ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:31:39,876 [47   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 53y4-4LSwrYDzQwW6ebasQ
+INFO  2019-11-30 16:31:39,880 [47   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 796077.4985ms 101 
+INFO  2019-11-30 16:31:39,929 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107274698553584  
+INFO  2019-11-30 16:31:39,935 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107274698553584  
+INFO  2019-11-30 16:31:39,965 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:31:39,968 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:31:39,971 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.2214ms.
+INFO  2019-11-30 16:31:39,973 [40   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:31:39,974 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:31:39,976 [40   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 8.0109ms
+INFO  2019-11-30 16:31:39,999 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.9018ms 200 application/x-javascript
+INFO  2019-11-30 16:31:40,001 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-11-30 16:31:40,011 [51   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:31:40,011 [51   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:31:40,018 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 14.4897ms.
+INFO  2019-11-30 16:31:40,020 [51   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:31:40,021 [51   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 45.2716ms
+INFO  2019-11-30 16:31:40,023 [51   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 88.9987ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:31:40,230 [46   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:31:40,238 [46   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7.7461ms 200 application/json
+INFO  2019-11-30 16:31:40,300 [40   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=kSN4i9eC9iIDrFRPDjnalw  
+INFO  2019-11-30 16:31:40,375 [40   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:31:40,376 [40   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"kSN4i9eC9iIDrFRPDjnalw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:31:40.3759845-06:00","Properties":{}}
+DEBUG 2019-11-30 16:31:40,376 [40   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: kSN4i9eC9iIDrFRPDjnalw
+INFO  2019-11-30 16:51:58,016 [78   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/LocationSource  
+INFO  2019-11-30 16:51:58,028 [78   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:51:58,198 [78   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:54:40,840 [86   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+DEBUG 2019-11-30 16:54:40,867 [87   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: kSN4i9eC9iIDrFRPDjnalw
+INFO  2019-11-30 16:54:40,869 [87   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1380569.7661ms 101 
+INFO  2019-11-30 16:54:40,881 [86   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 38.8048ms 200 application/json
+INFO  2019-11-30 16:54:40,885 [85   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=OVEJ8ebX_-X9o82YN4t1_g  
+INFO  2019-11-30 16:54:40,896 [91   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:54:40,896 [91   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"OVEJ8ebX_-X9o82YN4t1_g","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:54:40.8964376-06:00","Properties":{}}
+INFO  2019-11-30 16:54:58,022 [78   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 179801.4609ms.
+INFO  2019-11-30 16:54:58,034 [89   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:54:58,065 [79   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:54:58,066 [79   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:54:58,079 [79   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 50.7057ms.
+INFO  2019-11-30 16:54:58,081 [79   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) in 180050.9682ms
+INFO  2019-11-30 16:54:58,083 [79   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 180066.8148ms 200 text/html; charset=utf-8
+DEBUG 2019-11-30 16:54:58,091 [79   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: OVEJ8ebX_-X9o82YN4t1_g
+INFO  2019-11-30 16:54:58,093 [79   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 17208.1651ms 101 
+INFO  2019-11-30 16:54:58,144 [92   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107274698553584  
+INFO  2019-11-30 16:54:58,146 [79   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107274698553584  
+INFO  2019-11-30 16:54:58,154 [79   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:54:58,156 [79   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 16:54:58,159 [92   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:54:58,161 [92   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:54:58,163 [92   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.0599ms.
+INFO  2019-11-30 16:54:58,165 [92   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:54:58,166 [92   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.1103ms
+INFO  2019-11-30 16:54:58,168 [92   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 24.089ms 200 application/x-javascript
+WARN  2019-11-30 16:54:58,183 [79   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:54:58,183 [79   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:54:58,189 [79   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 31.3875ms.
+INFO  2019-11-30 16:54:58,191 [79   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:54:58,193 [79   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 37.0628ms
+INFO  2019-11-30 16:54:58,194 [79   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.5107ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:54:58,530 [78   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:54:58,536 [78   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.1087ms 200 application/json
+INFO  2019-11-30 16:54:58,594 [79   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=5ZDHSvetHZGr6G4s0l1W4A  
+INFO  2019-11-30 16:54:58,652 [83   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:54:58,652 [83   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"5ZDHSvetHZGr6G4s0l1W4A","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:54:58.6526601-06:00","Properties":{}}
+DEBUG 2019-11-30 16:54:58,653 [83   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 5ZDHSvetHZGr6G4s0l1W4A
+DEBUG 2019-11-30 16:59:39,280 [91   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 5ZDHSvetHZGr6G4s0l1W4A
+INFO  2019-11-30 16:59:39,281 [91   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 280687.2392ms 101 
+INFO  2019-11-30 16:59:47,868 [89   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/LocationSource  
+INFO  2019-11-30 16:59:47,877 [89   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:59:47,880 [89   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 16:59:49,545 [89   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1664.1015ms.
+INFO  2019-11-30 16:59:49,552 [86   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 16:59:49,568 [91   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:59:49,568 [91   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:59:49,575 [91   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 22.958ms.
+INFO  2019-11-30 16:59:49,577 [91   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) in 1698.8237ms
+INFO  2019-11-30 16:59:49,579 [91   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1711.5009ms 200 text/html; charset=utf-8
+INFO  2019-11-30 16:59:49,886 [93   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107274698553584  
+INFO  2019-11-30 16:59:49,887 [88   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107274698553584  
+INFO  2019-11-30 16:59:49,896 [93   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 16:59:49,898 [93   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 16:59:49,900 [93   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.062ms.
+INFO  2019-11-30 16:59:49,903 [93   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 16:59:49,905 [93   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 6.8328ms
+INFO  2019-11-30 16:59:49,907 [93   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.0856ms 200 application/x-javascript
+INFO  2019-11-30 16:59:49,909 [88   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 16:59:49,912 [88   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+WARN  2019-11-30 16:59:49,925 [88   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 16:59:49,925 [88   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 16:59:49,931 [88   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 17.2086ms.
+INFO  2019-11-30 16:59:49,932 [88   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:59:49,933 [88   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 22.9478ms
+INFO  2019-11-30 16:59:49,936 [88   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.6029ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 16:59:50,043 [86   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 16:59:50,049 [86   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.4375ms 200 application/json
+INFO  2019-11-30 16:59:50,098 [88   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=2B7rD7RLy_HD9UfnBi7j1w  
+INFO  2019-11-30 16:59:50,146 [89   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 16:59:50,146 [89   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"2B7rD7RLy_HD9UfnBi7j1w","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T16:59:50.1468755-06:00","Properties":{}}
+DEBUG 2019-11-30 16:59:50,147 [89   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 2B7rD7RLy_HD9UfnBi7j1w
+INFO  2019-11-30 16:59:55,000 [89   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/LocationSource/LoadForm application/html 
+INFO  2019-11-30 16:59:55,009 [89   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 16:59:55,011 [89   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc) with arguments () - Validation state: Valid
+DEBUG 2019-11-30 17:02:19,533 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-11-30 17:02:19,606 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-11-30 17:02:19,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.Web.Startup.RecyclopsWebMvcModule, Recyclops.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsWebCoreModule, Recyclops.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsApplicationModule, Recyclops.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.RecyclopsCoreModule, Recyclops.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Recyclops.EntityFrameworkCore.RecyclopsEntityFrameworkModule, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,627 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=4.8.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:19,630 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-11-30 17:02:19,700 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 17:02:19,700 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 17:02:19,700 [1    ] o.Configuration.LanguageManagementConfig - Converted Recyclops (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 17:02:19,700 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-11-30 17:02:20,028 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Recyclops.EntityFrameworkCore.RecyclopsDbContext, Recyclops.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-11-30 17:02:20,895 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-11-30 17:02:20,925 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-11-30 17:02:20,935 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-11-30 17:02:20,940 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Recyclops
+DEBUG 2019-11-30 17:02:20,944 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-11-30 17:02:21,117 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-11-30 17:02:21,251 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-11-30 17:02:21,299 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2019-11-30 17:02:21,300 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-11-30 17:02:21,309 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.CreateUserDto
+DEBUG 2019-11-30 17:02:21,310 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Users.Dto.UserDto
+DEBUG 2019-11-30 17:02:21,310 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-11-30 17:02:21,311 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-11-30 17:02:21,311 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Roles.Dto.PermissionDto
+DEBUG 2019-11-30 17:02:21,311 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PrintableObject.Dto.PrintableObjectDto
+DEBUG 2019-11-30 17:02:21,312 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Plastic.Dto.PlasticDto
+DEBUG 2019-11-30 17:02:21,312 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.PlasticSpool.Dto.PlasticSpoolDto
+DEBUG 2019-11-30 17:02:21,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-11-30 17:02:21,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.MultiTenancy.Dto.TenantDto
+DEBUG 2019-11-30 17:02:21,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.LocationSource.Dto.LocationSourceDto
+DEBUG 2019-11-30 17:02:21,313 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-11-30 17:02:21,314 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Recyclops.Web.Models.Roles.EditRoleModalViewModel
+INFO  2019-11-30 17:02:26,406 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-11-30 17:02:29,309 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/LocationSource  
+INFO  2019-11-30 17:02:30,262 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 17:02:30,264 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 17:02:30,333 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-11-30 17:02:30,961 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 17:02:40,743 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 17:02:40,807 [7    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 60.6482ms.
+INFO  2019-11-30 17:02:40,989 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10024.6174ms.
+INFO  2019-11-30 17:02:41,052 [17   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2019-11-30 17:02:41,054 [12   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 17:02:42,013 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 17:02:42,013 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 17:02:42,014 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+WARN  2019-11-30 17:02:42,014 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 17:02:42,366 [18   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1351.5972ms.
+INFO  2019-11-30 17:02:42,376 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.HomeController.Index (Recyclops.Web.Mvc) in 12109.1216ms
+INFO  2019-11-30 17:02:42,389 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 1375.6938ms.
+INFO  2019-11-30 17:02:42,391 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) in 12123.9898ms
+INFO  2019-11-30 17:02:42,395 [18   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15999.6521ms 200 text/html; charset=utf-8
+INFO  2019-11-30 17:02:42,399 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 13089.7295ms 200 text/html; charset=utf-8
+INFO  2019-11-30 17:02:42,464 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107301412524739  
+INFO  2019-11-30 17:02:42,466 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107301412524739  
+INFO  2019-11-30 17:02:42,498 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 17:02:42,506 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 17:02:42,539 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 17:02:42,567 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+WARN  2019-11-30 17:02:42,598 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 17:02:42,599 [6    ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 17:02:42,630 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 89.1249ms.
+INFO  2019-11-30 17:02:42,635 [6    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 17:02:42,640 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 139.9232ms
+INFO  2019-11-30 17:02:42,642 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 175.8261ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 17:02:42,667 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 97.8623ms.
+INFO  2019-11-30 17:02:42,669 [16   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 17:02:42,671 [16   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 163.7698ms
+INFO  2019-11-30 17:02:42,673 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 208.9943ms 200 application/x-javascript
+INFO  2019-11-30 17:02:42,765 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 17:02:42,798 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 33.1249ms 200 application/json
+INFO  2019-11-30 17:02:42,818 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=iYKB7zVJROM72xSPYyTCCw  
+INFO  2019-11-30 17:02:42,877 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+INFO  2019-11-30 17:02:42,908 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\favicon.ico'
+INFO  2019-11-30 17:02:42,910 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.5475ms 200 image/x-icon
+INFO  2019-11-30 17:02:43,000 [7    ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 17:02:43,028 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"iYKB7zVJROM72xSPYyTCCw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T17:02:43.0212186-06:00","Properties":{}}
+DEBUG 2019-11-30 17:02:43,073 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: iYKB7zVJROM72xSPYyTCCw
+INFO  2019-11-30 17:02:45,081 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/LocationSource/LoadForm application/html 
+INFO  2019-11-30 17:02:45,089 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 17:02:45,093 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc) with arguments () - Validation state: Valid
+INFO  2019-11-30 17:02:52,514 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 7397.8108ms.
+INFO  2019-11-30 17:02:52,525 [6    ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _Modal.
+INFO  2019-11-30 17:02:52,638 [6    ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _Modal executed in 115.9495ms.
+INFO  2019-11-30 17:02:52,640 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc) in 7549.0133ms
+INFO  2019-11-30 17:02:52,641 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7560.6166ms 200 text/html; charset=utf-8
+INFO  2019-11-30 17:02:52,652 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/view-resources/Views/LocationSource/_Modal.js?v=j1lwH54Y7XDTdDz9cD0pbuUO5aIJ7aHW6BNkGwOhYjs  
+INFO  2019-11-30 17:02:52,655 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/LocationSource/_Modal.js'. Physical path: 'C:\Users\Josh\Documents\Recyclops\4.7.1\aspnet-core\src\Recyclops.Web.Mvc\wwwroot\view-resources\Views\LocationSource\_Modal.js'
+INFO  2019-11-30 17:02:52,656 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4.4728ms 200 application/javascript
+INFO  2019-11-30 17:03:15,189 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/LocationSource/Create application/x-www-form-urlencoded; charset=UTF-8 88
+INFO  2019-11-30 17:03:15,199 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Create", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.Create (Recyclops.Web.Mvc)
+INFO  2019-11-30 17:03:15,250 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.Create (Recyclops.Web.Mvc) with arguments (Recyclops.Web.Models.LocationSource.LocationSourceViewModel) - Validation state: Valid
+DEBUG 2019-11-30 17:04:09,117 [27   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: iYKB7zVJROM72xSPYyTCCw
+INFO  2019-11-30 17:04:09,132 [27   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 86313.9511ms 101 
+INFO  2019-11-30 17:04:09,250 [18   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.Create (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 53997.8118ms.
+INFO  2019-11-30 17:04:09,273 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-11-30 17:04:09,290 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.Create (Recyclops.Web.Mvc) in 54089.5686ms
+INFO  2019-11-30 17:04:09,293 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 54103.5865ms 200 application/json; charset=utf-8
+INFO  2019-11-30 17:04:09,322 [25   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/LocationSource  
+INFO  2019-11-30 17:04:09,334 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc)
+INFO  2019-11-30 17:04:09,337 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) - Validation state: Valid
+INFO  2019-11-30 17:04:10,943 [25   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1603.2219ms.
+INFO  2019-11-30 17:04:10,949 [28   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-11-30 17:04:10,965 [23   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 17:04:10,966 [23   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 17:04:10,976 [23   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 26.1215ms.
+INFO  2019-11-30 17:04:10,977 [23   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.Index (Recyclops.Web.Mvc) in 1641.2396ms
+INFO  2019-11-30 17:04:10,979 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1657.462ms 200 text/html; charset=utf-8
+INFO  2019-11-30 17:04:11,022 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpScripts/GetScripts?v=637107301412524739  
+INFO  2019-11-30 17:04:11,023 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpServiceProxies/GetAll?v=637107301412524739  
+INFO  2019-11-30 17:04:11,030 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)
+INFO  2019-11-30 17:04:11,032 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)
+INFO  2019-11-30 17:04:11,035 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - Validation state: Valid
+INFO  2019-11-30 17:04:11,036 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments (, False) - Validation state: Valid
+INFO  2019-11-30 17:04:11,038 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 0.9792ms.
+INFO  2019-11-30 17:04:11,039 [24   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-11-30 17:04:11,041 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 9.3302ms
+INFO  2019-11-30 17:04:11,042 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.1438ms 200 application/x-javascript
+WARN  2019-11-30 17:04:11,051 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'PlasticSpool' in localization source 'Recyclops'!
+WARN  2019-11-30 17:04:11,052 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'PrintableObject' in localization source 'Recyclops'!
+INFO  2019-11-30 17:04:11,058 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.ContentResult in 18.3519ms.
+INFO  2019-11-30 17:04:11,059 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-11-30 17:04:11,061 [19   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 26.6462ms
+INFO  2019-11-30 17:04:11,062 [19   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 41.0945ms 200 application/x-javascript; charset=utf-8
+INFO  2019-11-30 17:04:11,300 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 17:04:11,306 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.5182ms 200 application/json
+INFO  2019-11-30 17:04:11,352 [32   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=AJih1Qi2ajiA0huih7_WjQ  
+INFO  2019-11-30 17:04:11,409 [19   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 17:04:11,409 [19   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"AJih1Qi2ajiA0huih7_WjQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T17:04:11.4094916-06:00","Properties":{}}
+DEBUG 2019-11-30 17:04:11,409 [19   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: AJih1Qi2ajiA0huih7_WjQ
+INFO  2019-11-30 17:04:17,527 [29   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/LocationSource/LoadForm?id=4 application/html 
+INFO  2019-11-30 17:04:17,535 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "LoadForm", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc)
+INFO  2019-11-30 17:04:17,538 [29   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc) with arguments (4) - Validation state: Valid
+DEBUG 2019-11-30 17:04:46,234 [37   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: AJih1Qi2ajiA0huih7_WjQ
+INFO  2019-11-30 17:04:46,242 [39   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34888.5931ms 101 
+INFO  2019-11-30 17:04:46,276 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 28735.3629ms.
+INFO  2019-11-30 17:04:46,280 [38   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _Modal.
+INFO  2019-11-30 17:04:46,284 [38   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _Modal executed in 4.0991ms.
+INFO  2019-11-30 17:04:46,286 [38   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.LoadForm (Recyclops.Web.Mvc) in 28749.4875ms
+INFO  2019-11-30 17:04:46,288 [38   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 28760.4917ms 200 text/html; charset=utf-8
+INFO  2019-11-30 17:04:51,255 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-11-30 17:04:51,261 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.6212ms 200 application/json
+INFO  2019-11-30 17:04:51,265 [35   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?id=GYc-BpY7TQ56JP0qoo3GxQ  
+INFO  2019-11-30 17:04:51,272 [31   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-11-30 17:04:51,273 [31   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"GYc-BpY7TQ56JP0qoo3GxQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-11-30T17:04:51.2732801-06:00","Properties":{}}
+INFO  2019-11-30 17:04:58,783 [41   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/LocationSource/Delete application/x-www-form-urlencoded 4
+INFO  2019-11-30 17:04:58,792 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Delete", controller = "LocationSource", area = ""}. Executing action Recyclops.Web.Controllers.LocationSourceController.Delete (Recyclops.Web.Mvc)
+INFO  2019-11-30 17:04:58,795 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Recyclops.Web.Controllers.LocationSourceController.Delete (Recyclops.Web.Mvc) with arguments (4) - Validation state: Valid
+INFO  2019-11-30 17:05:02,952 [41   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Recyclops.Web.Controllers.LocationSourceController.Delete (Recyclops.Web.Mvc), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 4154.4929ms.
+INFO  2019-11-30 17:05:03,006 [42   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-11-30 17:05:03,007 [42   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Recyclops.Web.Controllers.LocationSourceController.Delete (Recyclops.Web.Mvc) in 4213.6308ms
+INFO  2019-11-30 17:05:03,009 [42   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 4227.0499ms 200 application/json; charset=utf-8

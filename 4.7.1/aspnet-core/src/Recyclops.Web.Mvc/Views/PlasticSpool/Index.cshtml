@@ -1,22 +1,25 @@
 ﻿
 @using Abp.Authorization.Users
 @using Recyclops.Web.Startup
-@model List<Recyclops.Web.Models.Plastic.PlasticViewModel>
+@model List<Recyclops.Web.Models.PlasticSpool.PlasticSpoolViewModel>
 @{
-    ViewBag.CurrentPageName = PageNames.Plastic; // The menu item will be active for this page.
+    ViewBag.CurrentPageName = PageNames.PlasticSpool; // The menu item will be active for this page.
 }
 @section scripts
 {
     <environment names="Development">
-        <script src="~/view-resources/Views/Plastic/Index.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/PlasticSpool/Index.js" asp-append-version="true"></script>
     </environment>
 }
+
+
+
 <div class="row clearfix">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card">
             <div class="header">
                 <h2>
-                    @L("Plastics")
+                    @L("PlasticSpools")
                 </h2>
                 <ul class="header-dropdown m-r--5">
                     <li class="dropdown">
@@ -30,7 +33,7 @@
                 </ul>
             </div>
             <div id="tableContainer" class="body table-responsive">
-                <table id="PlasticTable" class="table">
+                <table id="PlasticSpoolTable" class="table">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -42,34 +45,34 @@
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>@item.Name</td>
-                            <td>@item.Mass</td>
-                            <td>@item.MeltingTemp</td>
-                            <td>@item.HeatedBed</td>
-                            <td>@item.LocationSource.Name</td>
-                            <td class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">menu</i>
-                                </a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.TimeToManufacture</td>
+                                <td>@item.Mass</td>
+                                <td>@item.ManufactureCost</td>
+                                <td>@item.SellValue</td>
+                                <td>@item.PlasticId</td>
+                                <td class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">menu</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li>
 
-                                        <a href="#" class="dropdown-item waves-effect waves-block edit-tag" data-tag-id="@item.Id">
-                                            <i class="fa fa-pencil-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item waves-effect waves-block delete-tag" data-tag-id="@item.Id">
-                                            <i class="fa fa-times"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    }
+                                            <a href="#" class="dropdown-item waves-effect waves-block edit-tag" data-tag-id="@item.Id">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item waves-effect waves-block delete-tag" data-tag-id="@item.Id">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        }
                     </tbody>
                 </table>
                 <button type="button" id="addButton" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal">

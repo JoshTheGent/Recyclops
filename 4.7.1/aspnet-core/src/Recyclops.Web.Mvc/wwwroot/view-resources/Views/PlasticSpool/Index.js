@@ -1,5 +1,5 @@
 ﻿
-$("#PlasticTable").DataTable({
+$("#PlasticSpoolTable").DataTable({
     "language": {
         emptyTable: "No Content to Display",
         search: "_INPUT_",
@@ -19,7 +19,7 @@ $("#PlasticTable").DataTable({
 $("#addButton").on('click', function (e) {
     e.preventDefault();
     $.ajax({
-        url: abp.appPath + "Plastic/LoadForm",
+        url: abp.appPath + "PlasticSpool/LoadForm",
         type: "GET",
         contentType: "application/html",
         success: function (content) {
@@ -37,7 +37,7 @@ $("#tableContainer").on('click', ".edit-tag", function (e) {
     var tagId = $(this).attr("data-tag-id");
     e.preventDefault();
     $.ajax({
-        url: abp.appPath + "Plastic/LoadForm?id=" + tagId,
+        url: abp.appPath + "PlasticSpool/LoadForm?id=" + tagId,
         type: "GET",
         contentType: "application/html",
         success: function (content) {
@@ -53,11 +53,11 @@ $("#tableContainer").on('click', ".edit-tag", function (e) {
 $("#tableContainer").on('click', ".delete-tag", function () {
     var tagId = $(this).attr("data-tag-id");
     abp.message.confirm(
-        abp.utils.formatString(abp.localization.localize("AreYouSureWantToDelete", "Recyclops"), "this Plastic"),
+        abp.utils.formatString(abp.localization.localize("AreYouSureWantToDelete", "Recyclops"), "this PlasticSpool"),
         function (isConfirmed) {
             if (isConfirmed) {
                 abp.ajax({
-                    url: "Plastic/Delete",
+                    url: "PlasticSpool/Delete",
                     dataType: "json",
                     contentType: 'application/x-www-form-urlencoded',
                     data: { id: tagId },

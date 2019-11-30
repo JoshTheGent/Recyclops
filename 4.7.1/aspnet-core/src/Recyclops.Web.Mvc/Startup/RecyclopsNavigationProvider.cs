@@ -48,6 +48,20 @@ namespace Recyclops.Web.Startup
                         )
                     ).AddItem(
                         new MenuItemDefinition(
+                            PageNames.PlasticSpool,
+                            L("PlasticSpool"),
+                            url: "PlasticSpool",
+                            icon: "business"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.PrintableObject,
+                            L("PrintableObject"),
+                            url: "PrintableObject",
+                            icon: "business"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
                             PageNames.LocationSource,
                             L("LocationSources"),
                             url: "LocationSource",

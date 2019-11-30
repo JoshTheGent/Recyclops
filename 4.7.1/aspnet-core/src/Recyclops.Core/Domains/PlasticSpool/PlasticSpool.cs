@@ -37,7 +37,5 @@ namespace Recyclops.Domains.PlasticSpool
         #endregion
 
 
-
-
     }
 }

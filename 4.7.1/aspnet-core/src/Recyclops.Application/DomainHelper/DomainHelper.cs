@@ -14,14 +14,14 @@ namespace Recyclops.DomainHelper
 
         private readonly IRepository<Domains.Plastic.Plastic> _plasticRepository;
         private readonly IRepository<Domains.LocationSource.LocationSource> _locationRepository;
-        private readonly IRepository<PlasticSpool> _spoolRepository;
-        private readonly IRepository<PrintableObject> _printableRepository;
+        private readonly IRepository<Domains.PlasticSpool.PlasticSpool> _spoolRepository;
+        private readonly IRepository<Domains.PrintableObject.PrintableObject> _printableRepository;
 
         #endregion
 
         #region Constructor
 
-        public DomainHelper(IRepository<Domains.Plastic.Plastic> plasticRepository, IRepository<Domains.LocationSource.LocationSource> locationRepository, IRepository<PlasticSpool> spoolRepository, IRepository<PrintableObject> printableRepository)
+        public DomainHelper(IRepository<Domains.Plastic.Plastic> plasticRepository, IRepository<Domains.LocationSource.LocationSource> locationRepository, IRepository<Domains.PlasticSpool.PlasticSpool> spoolRepository, IRepository<Domains.PrintableObject.PrintableObject> printableRepository)
         {
             _plasticRepository = plasticRepository;
             _locationRepository = locationRepository;
@@ -151,8 +151,8 @@ namespace Recyclops.DomainHelper
                 }
 
 
-                var spools = new List<PlasticSpool>();
-                spools.Add(new PlasticSpool
+                var spools = new List<Domains.PlasticSpool.PlasticSpool>();
+                spools.Add(new Domains.PlasticSpool.PlasticSpool
                 {
                     
                     CreationTime = DateTime.Now,
@@ -162,7 +162,7 @@ namespace Recyclops.DomainHelper
                     ManufactureCost = 5.00,
                     PlasticId = 1
                 });
-                spools.Add(new PlasticSpool
+                spools.Add(new Domains.PlasticSpool.PlasticSpool
                 {
                     
                     CreationTime = DateTime.Now,
@@ -172,7 +172,7 @@ namespace Recyclops.DomainHelper
                     ManufactureCost = 3.25,
                     PlasticId = 3
                 });
-                spools.Add(new PlasticSpool
+                spools.Add(new Domains.PlasticSpool.PlasticSpool
                 {
                     
                     CreationTime = DateTime.Now,
@@ -182,7 +182,7 @@ namespace Recyclops.DomainHelper
                     ManufactureCost = 15.45,
                     PlasticId = 5
                 });
-                spools.Add(new PlasticSpool
+                spools.Add(new Domains.PlasticSpool.PlasticSpool
                 {
                     
                     CreationTime = DateTime.Now,
@@ -197,8 +197,8 @@ namespace Recyclops.DomainHelper
                     _spoolRepository.Insert(spool);
                 }
 
-                var printables = new List<PrintableObject>();
-                printables.Add(new PrintableObject
+                var printables = new List<Domains.PrintableObject.PrintableObject>();
+                printables.Add(new Domains.PrintableObject.PrintableObject
                 {
                     
                     CreationTime = DateTime.Now,
@@ -208,6 +208,11 @@ namespace Recyclops.DomainHelper
                     SellValue = 5.00,
                     URL = "https://www.thingiverse.com/thing:2014307"
                 });
+
+                foreach (var printable in printables)
+                {
+                    _printableRepository.Insert(printable);
+                }
 
             }
 

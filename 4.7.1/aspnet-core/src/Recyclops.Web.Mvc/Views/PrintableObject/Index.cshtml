@@ -1,14 +1,14 @@
 ﻿
 @using Abp.Authorization.Users
 @using Recyclops.Web.Startup
-@model List<Recyclops.Web.Models.Plastic.PlasticViewModel>
+@model List<Recyclops.Web.Models.PrintableObject.PrintableObjectViewModel>
 @{
-    ViewBag.CurrentPageName = PageNames.Plastic; // The menu item will be active for this page.
+    ViewBag.CurrentPageName = PageNames.PrintableObject; // The menu item will be active for this page.
 }
 @section scripts
 {
     <environment names="Development">
-        <script src="~/view-resources/Views/Plastic/Index.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/PrintableObject/Index.js" asp-append-version="true"></script>
     </environment>
 }
 <div class="row clearfix">
@@ -16,7 +16,7 @@
         <div class="card">
             <div class="header">
                 <h2>
-                    @L("Plastics")
+                    @L("PrintableObjects")
                 </h2>
                 <ul class="header-dropdown m-r--5">
                     <li class="dropdown">
@@ -30,26 +30,28 @@
                 </ul>
             </div>
             <div id="tableContainer" class="body table-responsive">
-                <table id="PlasticTable" class="table">
+                <table id="PrintableObjectTable" class="table">
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Density</th>
-                            <th>Melting Temperature &deg;C</th>
-                            <th>Heated Bed &deg;C </th>
-                            <th>Location</th>
+                            <th>PrintTime</th>
+                            <th>PrintCost</th>
+                            <th>SellValue</th>
+                            <th>URL</th>
+                            <th>PlasticSpoolId</th>
                             <th>@L("Actions")</th>
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach (var item in Model)
-                    {
+                        @foreach (var item in Model)
+                        {
                         <tr>
                             <td>@item.Name</td>
-                            <td>@item.Mass</td>
-                            <td>@item.MeltingTemp</td>
-                            <td>@item.HeatedBed</td>
-                            <td>@item.LocationSource.Name</td>
+                            <td>@item.PrintTime</td>
+                            <td>@item.PrintCost</td>
+                            <td>@item.SellValue</td>
+                            <td>@item.URL</td>
+                            <td>@item.PlasticSpoolId</td>
                             <td class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">menu</i>
@@ -69,7 +71,7 @@
                                 </ul>
                             </td>
                         </tr>
-                    }
+                        }
                     </tbody>
                 </table>
                 <button type="button" id="addButton" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal">
