@@ -1,1 +1,81 @@
-﻿
+﻿@using Recyclops.Web.Models.Common.Modals
+@using Recyclops
+@using Recyclops.Web.Models.Common.Modals
+@model Recyclops.Web.Models.PlasticSpool.PlasticSpoolViewModel
+
+@{
+    Layout = null;
+}
+
+
+@HtmlHelperPartialExtensions.Partial(Html, "~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.Id == 0 ? "Add Plastic Spool" : "Edit Plastic Spool"))
+<div class="modal-body">
+    <form id="PlasticSpoolForm" name="createForm" role="form" class="form-validation">
+        <input asp-for="Id" type="hidden" />
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="TimeToManufacture">Time To Manufacture</label>
+                        <input type="time" asp-for="TimeToManufacture" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="Mass">Density</label>
+                        <input type="number" asp-for="Mass" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="ManufactureCost">Manufacture Cost</label>
+                        <input type="number" asp-for="ManufactureCost" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="SellValue">Sell Value</label>
+                        <input type="number" asp-for="SellValue" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="PlasticId">Plastic</label>
+                        <select id="LocationList" type="text" asp-for="PlasticId" asp-items="Model.PlasticList" required class="validate form-control">
+                            <option value="">--Select one--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<environment names="Development">
+    <script src="~/view-resources/Views/PlasticSpool/_Modal.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/view-resources/Views/PlasticSpool/_Modal.min.js" asp-append-version="true"></script>
+</environment>

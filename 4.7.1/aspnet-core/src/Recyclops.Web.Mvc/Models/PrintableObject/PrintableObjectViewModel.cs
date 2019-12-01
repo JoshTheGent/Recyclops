@@ -2,18 +2,39 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Recyclops.PlasticSpool.Dto;
 using Recyclops.PrintableObject.Dto;
 
 namespace Recyclops.Web.Models.PrintableObject
 {
     public class PrintableObjectViewModel
     {
+
         public PrintableObjectViewModel()
         {
 
         }
 
+
+        public PrintableObjectViewModel(IList<PlasticSpoolDto> spools)
+        {
+            SpoolList = spools.Select(x => new SelectListItem(x.Mass + " -- " + x.Plastic.Name, x.Id.ToString()));
+        }
+
         public PrintableObjectViewModel(PrintableObjectDto dto)
+        {
+            Id = dto.Id;
+            Name = dto.Name;
+            PrintTime = dto.PrintTime;
+            PrintCost = dto.PrintCost;
+            SellValue = dto.SellValue;
+            URL = dto.URL;
+            PlasticSpoolId = dto.PlasticSpoolId;
+            PlasticSpoolName = dto.PlasticSpool.Mass + " -- " + dto.PlasticSpool.Plastic.Name;
+        }
+
+        public PrintableObjectViewModel(PrintableObjectDto dto, IList<PlasticSpoolDto> spools)
         {
 
             Id = dto.Id;
@@ -23,6 +44,7 @@ namespace Recyclops.Web.Models.PrintableObject
             SellValue = dto.SellValue;
             URL = dto.URL;
             PlasticSpoolId = dto.PlasticSpoolId;
+            SpoolList = spools.Select(x => new SelectListItem(x.Mass + " -- " + x.Plastic.Name, x.Id.ToString()));
 
         }
 
@@ -33,6 +55,9 @@ namespace Recyclops.Web.Models.PrintableObject
         public double SellValue { get; set; }
         public string URL { get; set; }
         public int PlasticSpoolId { get; set; }
+        public string PlasticSpoolName { get; set; }
+
+        public IEnumerable<SelectListItem> SpoolList { get; set; }
 
 
         public PrintableObjectDto DtoModel()

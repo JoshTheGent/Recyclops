@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="en">
   <texts>
+    <text name="Orders" value="Orders"/>
+    <text name="Order" value="Order"/>
+    <text name="PrintableObject" value="Printable Object"/>
+    <text name="PlasticSpool" value="Plastic Spool"/>
+    <text name="PrintableObjects" value="Printable Objects"/>
+    <text name="PlasticSpools" value="Plastic Spools"/>
     <text name="QuestionsConcerns" value="Questions Concerns"/>
     <text name="Management" value="Management"/>
     <text name="Maps" value="Maps" />

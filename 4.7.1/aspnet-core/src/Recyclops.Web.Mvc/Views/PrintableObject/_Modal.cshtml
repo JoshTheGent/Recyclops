@@ -1,1 +1,90 @@
-﻿
+﻿@using Recyclops.Web.Models.Common.Modals
+@using Recyclops
+@using Recyclops.Web.Models.Common.Modals
+@model Recyclops.Web.Models.PrintableObject.PrintableObjectViewModel
+
+@{
+    Layout = null;
+}
+
+
+@HtmlHelperPartialExtensions.Partial(Html, "~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.Id == 0 ? "Add Printable Object" : "Edit Printable Object"))
+<div class="modal-body">
+    <form id="PrintableObjectForm" name="createForm" role="form" class="form-validation">
+        <input asp-for="Id" type="hidden" />
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="Name">Name</label>
+                        <input type="text" asp-for="Name" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="PrintTime">Print Time</label>
+                        <input type="time" asp-for="PrintTime" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="PrintCost">Print Cost</label>
+                        <input type="number" asp-for="PrintCost" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="SellValue">Sell Value</label>
+                        <input type="number" asp-for="SellValue" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="URL">URL</label>
+                        <input type="text" asp-for="URL" required class="validate form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="PlasticSpoolId">Plastic Spool</label>
+                        <select id="SpoolList" type="text" asp-for="PlasticSpoolId" asp-items="Model.SpoolList" required class="validate form-control">
+                            <option value="">--Select one--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<environment names="Development">
+    <script src="~/view-resources/Views/PrintableObject/_Modal.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/view-resources/Views/PrintableObject/_Modal.min.js" asp-append-version="true"></script>
+</environment>

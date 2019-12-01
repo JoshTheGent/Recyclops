@@ -25,7 +25,10 @@ namespace Recyclops.Web.Controllers
 
         public ActionResult Index()
         {
-            _domainHelper.UploadData();
+            _domainHelper.UploadLocations();
+            _domainHelper.UploadPlastics();
+            _domainHelper.UploadSpools();
+            _domainHelper.UploadPrintables();
 
             var model = new DashReportViewModel(_dashBoardService.GetDashLocationReport(), _dashBoardService.GetDashPlasticReport());
 

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Recyclops.Controllers;
+using Recyclops.Plastic;
 using Recyclops.PlasticSpool;
 using Recyclops.Web.Models.PlasticSpool;
 
@@ -12,15 +13,17 @@ namespace Recyclops.Web.Controllers
     {
         #region Properies
 
-        private readonly IPlasticSpoolService _PlasticSpoolService;
+        private readonly IPlasticSpoolService _plasticSpoolService;
+        private readonly IPlasticService _plasticService;
 
         #endregion
 
         #region Constructor
 
-        public PlasticSpoolController(IPlasticSpoolService PlasticSpoolService)
+        public PlasticSpoolController(IPlasticSpoolService plasticSpoolService, IPlasticService plasticService)
         {
-            _PlasticSpoolService = PlasticSpoolService;
+            _plasticSpoolService = plasticSpoolService;
+            _plasticService = plasticService;
         }
 
         #endregion
@@ -30,7 +33,7 @@ namespace Recyclops.Web.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            var data = _PlasticSpoolService.GetAllIncluding();
+            var data = _plasticSpoolService.GetAllIncluding();
             var model = data.Select(x => new PlasticSpoolViewModel(x)).ToList();
 
             return View(model);
@@ -46,8 +49,9 @@ namespace Recyclops.Web.Controllers
         [HttpGet]
         public async Task<PartialViewResult> LoadForm(int? id)
         {
+            var plastics = _plasticService.GetAllIncludingLocation().ToList();
 
-            return PartialView("_Modal", id == null ? new PlasticSpoolViewModel() : new PlasticSpoolViewModel(await _PlasticSpoolService.Get(new EntityDto((int)id))));
+            return PartialView("_Modal", id == null ? new PlasticSpoolViewModel(plastics) : new PlasticSpoolViewModel(await _plasticSpoolService.Get(new EntityDto((int)id)), plastics));
         }
 
         #endregion
@@ -60,15 +64,15 @@ namespace Recyclops.Web.Controllers
             var data = plasticSpoolViewModel.DtoModel();
 
             if (plasticSpoolViewModel.Id == 0)
-                await _PlasticSpoolService.Create(data);
+                await _plasticSpoolService.Create(data);
             if (plasticSpoolViewModel.Id != 0)
-                await _PlasticSpoolService.Update(data);
+                await _plasticSpoolService.Update(data);
         }
 
         [HttpPost]
         public async Task Delete(int id)
         {
-            await _PlasticSpoolService.Delete(new EntityDto { Id = id });
+            await _plasticSpoolService.Delete(new EntityDto { Id = id });
         }
 
         #endregion

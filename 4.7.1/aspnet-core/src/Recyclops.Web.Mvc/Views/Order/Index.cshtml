@@ -1,25 +1,22 @@
 ﻿
 @using Abp.Authorization.Users
 @using Recyclops.Web.Startup
-@model List<Recyclops.Web.Models.PlasticSpool.PlasticSpoolViewModel>
+@model List<Recyclops.Web.Models.Order.OrderViewModel>
 @{
-    ViewBag.CurrentPageName = PageNames.PlasticSpool; // The menu item will be active for this page.
+    ViewBag.CurrentPageName = PageNames.Order; // The menu item will be active for this page.
 }
 @section scripts
 {
     <environment names="Development">
-        <script src="~/view-resources/Views/PlasticSpool/Index.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/Order/Index.js" asp-append-version="true"></script>
     </environment>
 }
-
-
-
 <div class="row clearfix">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="card">
             <div class="header">
                 <h2>
-                    @L("PlasticSpools")
+                    @L("Orders")
                 </h2>
                 <ul class="header-dropdown m-r--5">
                     <li class="dropdown">
@@ -33,14 +30,14 @@
                 </ul>
             </div>
             <div id="tableContainer" class="body table-responsive">
-                <table id="PlasticSpoolTable" class="table">
+                <table id="OrderTable" class="table">
                     <thead>
                         <tr>
-                            <th>Time To Manufacture</th>
-                            <th>Mass</th>
-                            <th>Manufacture Cost</th>
-                            <th>Sell Value</th>
-                            <th>Plastic Id</th>
+                            <th>Client Name</th>
+                            <th>Total Cost</th>
+                            <th>Number of Items</th>
+                            <th>Is Complete</th>
+                            <th>Bought</th>
                             <th>@L("Actions")</th>
                         </tr>
                     </thead>
@@ -48,11 +45,11 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@item.TimeToManufacture</td>
-                                <td>@item.Mass</td>
-                                <td>@item.ManufactureCost</td>
-                                <td>@item.SellValue</td>
-                                <td>@item.PlasticId</td>
+                                <td>@item.ClientName</td>
+                                <td>@item.TotalCost</td>
+                                <td>@item.NumItems</td>
+                                <td>@item.IsComplete</td>
+                                <td>@item.Bought</td>
                                 <td class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="material-icons">menu</i>

@@ -35,6 +35,8 @@ namespace Recyclops.PrintableObject
         var dom = Repository
             .GetAll()
             .Include(x=>x.PlasticSpool)
+            .ThenInclude(x=>x.Plastic)
+            .ThenInclude(x=>x.LocationSource)
             .Include(x=>x.PrintableOrders)
             .ThenInclude(x=>x.Order)
             .ToList();

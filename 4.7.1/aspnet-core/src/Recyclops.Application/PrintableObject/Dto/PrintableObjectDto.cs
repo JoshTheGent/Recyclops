@@ -43,7 +43,7 @@ namespace Recyclops.PrintableObject.Dto
 
         public Domains.PlasticSpool.PlasticSpool PlasticSpool { get; set; }
         //Has Many
-        public IList<PrintableOrder> PrintableOrders { get; set; }
+        public IList<Domains.PrintableOrder.PrintableOrder> PrintableOrders { get; set; }
 
 
     }

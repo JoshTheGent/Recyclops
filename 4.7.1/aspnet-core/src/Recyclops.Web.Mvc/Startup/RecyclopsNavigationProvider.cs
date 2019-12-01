@@ -22,17 +22,11 @@ namespace Recyclops.Web.Startup
                     )
                 ).AddItem(
                     new MenuItemDefinition(
-                        PageNames.About,
-                        L("About"),
-                        url: "About",
-                        icon: "info"
-                    )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.About,
-                        L("QuestionsConcerns"),
-                        url: "QuestionsConcerns",
-                        icon: "info"
+                        PageNames.Order,
+                        L("Order"),
+                        url: "Order",
+                        icon: "home",
+                        requiresAuthentication: true
                     )
                 ).AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(

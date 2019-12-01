@@ -8,7 +8,7 @@
 @section scripts
 {
     <environment names="Development">
-        <script src="~/view-resources/Views/PrintableObject/Index.js" asp-append-version="true"></script>
+        <script src="~/view-resources/Views/PrintableObjects/Index.js" asp-append-version="true"></script>
     </environment>
 }
 <div class="row clearfix">
@@ -34,11 +34,11 @@
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>PrintTime</th>
-                            <th>PrintCost</th>
-                            <th>SellValue</th>
+                            <th>Print Time</th>
+                            <th>Print Cost</th>
+                            <th>Sell Value</th>
+                            <th>Plastic Spool</th>
                             <th>URL</th>
-                            <th>PlasticSpoolId</th>
                             <th>@L("Actions")</th>
                         </tr>
                     </thead>
@@ -50,8 +50,8 @@
                             <td>@item.PrintTime</td>
                             <td>@item.PrintCost</td>
                             <td>@item.SellValue</td>
+                            <td>@item.PlasticSpoolName</td>
                             <td>@item.URL</td>
-                            <td>@item.PlasticSpoolId</td>
                             <td class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">menu</i>

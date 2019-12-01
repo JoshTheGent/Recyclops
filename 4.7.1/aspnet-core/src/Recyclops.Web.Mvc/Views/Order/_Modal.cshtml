@@ -1,0 +1,51 @@
+﻿
+@using Recyclops.Web.Models.Common.Modals
+@using Recyclops
+@using Recyclops.Web.Models.Common.Modals
+@model Recyclops.Web.Models.Order.OrderViewModel
+
+@{
+    Layout = null;
+}
+
+
+@HtmlHelperPartialExtensions.Partial(Html, "~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(Model.Id == 0 ? "Add Order" : "Edit Order"))
+<div class="modal-body">
+    <form id="OrderForm" name="createForm" role="form" class="form-validation">
+        <input asp-for="Id" type="hidden" />
+
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="PlasticOrderIds">Plastic Spools</label>
+                        <select id="PlasticList" asp-for="PlasticOrderIds" asp-items="Model.PlasticOrders" required class="validate form-control">
+                            <option value="">--Select one--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix" style="margin-top:10px;">
+            <div class="col-sm-12">
+                <div class="form-group form-float">
+                    <div class="form-line">
+                        <label asp-for="PrintableOrderIds">Printable Objects</label>
+                        <select id="PrintableList" asp-for="PrintableOrderIds" asp-items="Model.PrintableOrders" required class="validate form-control">
+                            <option value="">--Select one--</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+@Html.Partial("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
+<environment names="Development">
+    <script src="~/view-resources/Views/Order/_Modal.js" asp-append-version="true"></script>
+</environment>
+<environment names="Staging,Production">
+    <script src="~/view-resources/Views/Order/_Modal.min.js" asp-append-version="true"></script>
+</environment>

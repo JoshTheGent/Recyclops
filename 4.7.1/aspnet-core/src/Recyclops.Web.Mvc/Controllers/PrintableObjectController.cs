@@ -6,6 +6,7 @@ using Abp.Application.Services.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Recyclops.Controllers;
 using Recyclops.LocationSource;
+using Recyclops.PlasticSpool;
 using Recyclops.PrintableObject;
 using Recyclops.Web.Models.PrintableObject;
 
@@ -16,14 +17,16 @@ namespace Recyclops.Web.Controllers
         #region Properies
 
         private readonly IPrintableObjectService _printableObjectService;
+        private readonly IPlasticSpoolService _plasticSpoolService;
 
         #endregion
 
         #region Constructor
 
-        public PrintableObjectController(IPrintableObjectService printableObjectService)
+        public PrintableObjectController(IPrintableObjectService printableObjectService, IPlasticSpoolService plasticSpoolService)
         {
             _printableObjectService = printableObjectService;
+            _plasticSpoolService = plasticSpoolService;
         }
 
         #endregion
@@ -33,6 +36,7 @@ namespace Recyclops.Web.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+
             var data = _printableObjectService.GetAllIncluding();
             var model = data.Select(x => new PrintableObjectViewModel(x)).ToList();
 
@@ -49,8 +53,8 @@ namespace Recyclops.Web.Controllers
         [HttpGet]
         public async Task<PartialViewResult> LoadForm(int? id)
         {
-
-            return PartialView("_Modal", id == null ? new PrintableObjectViewModel() : new PrintableObjectViewModel(await _printableObjectService.Get(new EntityDto((int)id))));
+            var spools = _plasticSpoolService.GetAllIncluding().ToList();
+            return PartialView("_Modal", id == null ? new PrintableObjectViewModel(spools) : new PrintableObjectViewModel(await _printableObjectService.Get(new EntityDto((int)id)), spools));
         }
 
         #endregion
