@@ -12,12 +12,19 @@ namespace Recyclops.Order.Dto
     {
         #region Properties
 
+        public OrderDto()
+        {
+
+        }
+
+
         public OrderDto(Domains.Order.Order dom)
         {
+            Id = dom.Id;
             TotalCost = dom.TotalCost;
             IsComplete = dom.IsComplete;
-            ClientId = ClientId;
-            Client = Client;
+            ClientId = dom.ClientId;
+            Client = dom.Client;
             PlasticOrders = dom.PlasticOrders;
             PrintableOrders = dom.PrintableOrders;
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Abp.AspNetCore.Mvc.Authorization;
 using Recyclops.Controllers;
 using Recyclops.DashBoardReports;
@@ -25,14 +26,25 @@ namespace Recyclops.Web.Controllers
 
         public ActionResult Index()
         {
-            _domainHelper.UploadLocations();
-            _domainHelper.UploadPlastics();
-            _domainHelper.UploadSpools();
-            _domainHelper.UploadPrintables();
+
 
             var model = new DashReportViewModel(_dashBoardService.GetDashLocationReport(), _dashBoardService.GetDashPlasticReport());
 
             return View(model);
         }
+
+
+
+        public async Task Upload()
+        {
+            if (!_domainHelper.UploadCheck()) return;
+            var locIds = await _domainHelper.UploadLocations();
+            var plasticIds = await _domainHelper.UploadPlastics(locIds);
+            var spoolIds = await _domainHelper.UploadSpools(plasticIds);
+            var printableIds = await _domainHelper.UploadPrintables(spoolIds);
+        }
+
+
+
 	}
 }

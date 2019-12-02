@@ -13,6 +13,7 @@ namespace Recyclops.LocationSource.Dto
 
         public LocationSourceDto(Domains.LocationSource.LocationSource dom)
         {
+            Id = dom.Id;
             Name = dom.Name;
             City = dom.City;
             State = dom.State;

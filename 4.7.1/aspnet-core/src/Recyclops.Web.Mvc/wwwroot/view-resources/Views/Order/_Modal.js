@@ -2,6 +2,12 @@
     var _$modal = $("#OrderForm");
     var _$form = $('form[name=createForm]');
 
+    $(".js-example-basic-multiple").select2({
+        theme: "classic",
+        width: 'resolve' // need to override the changed default
+    });
+    
+
 
     $(".save-button").on("click",
         function (e) {
@@ -19,7 +25,6 @@
                 data: $("#OrderForm").serialize(),
                 success: function () {
                     $("#modal").modal("hide");
-                    debugger;
                     location.reload(true);
                 },
                 error: function (e) {
