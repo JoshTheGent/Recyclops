@@ -62,7 +62,7 @@ $("#tableContainer").on('click', ".delete-tag", function () {
                     contentType: 'application/x-www-form-urlencoded',
                     data: { id: tagId },
                     success: function () {
-                        LoadTable();
+                        location.reload(true);
                     },
                     error: function (e) {
                         abp.notify.error('Error: ' + e);

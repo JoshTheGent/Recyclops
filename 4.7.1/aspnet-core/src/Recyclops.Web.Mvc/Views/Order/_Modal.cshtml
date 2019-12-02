@@ -19,25 +19,28 @@
                 <div class="form-group form-float">
                     <div class="form-line">
                         <label asp-for="PlasticOrderIds">Plastic Spools</label>
-                        <select id="PlasticList" asp-for="PlasticOrderIds" asp-items="Model.PlasticOrders" required class="validate form-control">
+                        <select id="PlasticList" asp-for="PlasticOrderIds" asp-items="Model.PlasticOrders" class="js-example-basic-multiple" style="width: 100%">
                             <option value="">--Select one--</option>
                         </select>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="row clearfix" style="margin-top:10px;">
             <div class="col-sm-12">
                 <div class="form-group form-float">
                     <div class="form-line">
                         <label asp-for="PrintableOrderIds">Printable Objects</label>
-                        <select id="PrintableList" asp-for="PrintableOrderIds" asp-items="Model.PrintableOrders" required class="validate form-control">
+                        <select id="PrintableList" asp-for="PrintableOrderIds" asp-items="Model.PrintableOrders" class="js-example-basic-multiple" style="width: 100%">
                             <option value="">--Select one--</option>
                         </select>
                     </div>
                 </div>
             </div>
         </div>
+
 
     </form>
 </div>

@@ -19,7 +19,6 @@
                 data: $("#PlasticSpoolForm").serialize(),
                 success: function () {
                     $("#modal").modal("hide");
-                    debugger;
                     location.reload(true);
                 },
                 error: function (e) {

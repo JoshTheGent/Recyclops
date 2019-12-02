@@ -22,6 +22,8 @@ namespace Recyclops.Web.Models.PlasticSpool
 
             Id = dto.Id;
             TimeToManufacture = dto.TimeToManufacture;
+            Hours = TimeToManufacture.Hours;
+            Min = TimeToManufacture.Minutes;
             Mass = dto.Mass;
             ManufactureCost = dto.ManufactureCost;
             SellValue = dto.SellValue;
@@ -35,6 +37,8 @@ namespace Recyclops.Web.Models.PlasticSpool
 
             Id = dto.Id;
             TimeToManufacture = dto.TimeToManufacture;
+            Hours = TimeToManufacture.Hours;
+            Min = TimeToManufacture.Minutes;
             Mass = dto.Mass;
             ManufactureCost = dto.ManufactureCost;
             SellValue = dto.SellValue;
@@ -53,6 +57,8 @@ namespace Recyclops.Web.Models.PlasticSpool
 
         public int Id { get; set; }
         public TimeSpan TimeToManufacture { get; set; }
+        public int Hours { get; set; }
+        public int Min { get; set; }
         public int Mass { get; set; }
         public double ManufactureCost { get; set; }
         public double SellValue { get; set; }
@@ -63,10 +69,12 @@ namespace Recyclops.Web.Models.PlasticSpool
 
         public PlasticSpoolDto DtoModel()
         {
+            var time = new TimeSpan(Hours, Min, 0);
             return new PlasticSpoolDto
             {
+                
                 Id = Id,
-                TimeToManufacture = TimeToManufacture,
+                TimeToManufacture = time,
                 Mass = Mass,
                 ManufactureCost = ManufactureCost,
                 SellValue = SellValue,

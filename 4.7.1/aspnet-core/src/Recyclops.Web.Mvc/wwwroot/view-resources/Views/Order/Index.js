@@ -33,21 +33,27 @@ $("#addButton").on('click', function (e) {
 });
 
 
-$("#tableContainer").on('click', ".edit-tag", function (e) {
+$("#tableContainer").on('click', ".complete-tag", function () {
     var tagId = $(this).attr("data-tag-id");
-    e.preventDefault();
-    $.ajax({
-        url: abp.appPath + "Order/LoadForm?id=" + tagId,
-        type: "GET",
-        contentType: "application/html",
-        success: function (content) {
-            $("#modal").modal("show");
-            $("#modal div.modal-content").html(content);
-        },
-        error: function (e) {
-            abp.notify.error('Error: ' + e);
+    abp.message.confirm(
+        abp.utils.formatString("Complete this Order?"),
+        function (isConfirmed) {
+            if (isConfirmed) {
+                abp.ajax({
+                    url: "Order/Complete",
+                    dataType: "json",
+                    contentType: 'application/x-www-form-urlencoded',
+                    data: { id: tagId },
+                    success: function () {
+                        location.reload(true);
+                    },
+                    error: function (e) {
+                        abp.notify.error('Error: ' + e);
+                    }
+                });
+            }
         }
-    });
+    );
 });
 
 $("#tableContainer").on('click', ".delete-tag", function () {
@@ -62,7 +68,7 @@ $("#tableContainer").on('click', ".delete-tag", function () {
                     contentType: 'application/x-www-form-urlencoded',
                     data: { id: tagId },
                     success: function () {
-                        LoadTable();
+                        location.reload(true);
                     },
                     error: function (e) {
                         abp.notify.error('Error: ' + e);

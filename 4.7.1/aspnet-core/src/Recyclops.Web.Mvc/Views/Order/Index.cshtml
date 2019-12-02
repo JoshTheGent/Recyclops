@@ -35,9 +35,7 @@
                         <tr>
                             <th>Client Name</th>
                             <th>Total Cost</th>
-                            <th>Number of Items</th>
                             <th>Is Complete</th>
-                            <th>Bought</th>
                             <th>@L("Actions")</th>
                         </tr>
                     </thead>
@@ -47,9 +45,7 @@
                             <tr>
                                 <td>@item.ClientName</td>
                                 <td>@item.TotalCost</td>
-                                <td>@item.NumItems</td>
                                 <td>@item.IsComplete</td>
-                                <td>@item.Bought</td>
                                 <td class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="material-icons">menu</i>
@@ -57,7 +53,7 @@
                                     <ul class="dropdown-menu pull-right">
                                         <li>
 
-                                            <a href="#" class="dropdown-item waves-effect waves-block edit-tag" data-tag-id="@item.Id">
+                                            <a href="#" class="dropdown-item waves-effect waves-block complete-tag" data-tag-id="@item.Id">
                                                 <i class="fa fa-pencil-alt"></i>
                                             </a>
                                         </li>

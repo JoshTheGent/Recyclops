@@ -12,22 +12,28 @@
 <div class="modal-body">
     <form id="PlasticSpoolForm" name="createForm" role="form" class="form-validation">
         <input asp-for="Id" type="hidden" />
-
+        <label>Time To Manufacture</label>
         <div class="row clearfix" style="margin-top:10px;">
-            <div class="col-sm-12">
-                <div class="form-group form-float">
-                    <div class="form-line">
-                        <label asp-for="TimeToManufacture">Time To Manufacture</label>
-                        <input type="time" asp-for="TimeToManufacture" required class="validate form-control" />
+
+            <div class="form-group form-float">
+
+
+                    <div class="col-sm-6">
+                        <label asp-for="Hours">Hours</label>
+                        <input type="number" asp-for="Hours" required class="validate form-control" />
                     </div>
-                </div>
+                    <div class="col-sm-6">
+                        <label asp-for="Min">Minutes</label>
+                        <input type="number" asp-for="Min" required class="validate form-control" />
+                    </div>
+
             </div>
         </div>
         <div class="row clearfix" style="margin-top:10px;">
             <div class="col-sm-12">
                 <div class="form-group form-float">
                     <div class="form-line">
-                        <label asp-for="Mass">Density</label>
+                        <label asp-for="Mass">Mass(int)</label>
                         <input type="number" asp-for="Mass" required class="validate form-control" />
                     </div>
                 </div>
@@ -39,7 +45,7 @@
                 <div class="form-group form-float">
                     <div class="form-line">
                         <label asp-for="ManufactureCost">Manufacture Cost</label>
-                        <input type="number" asp-for="ManufactureCost" required class="validate form-control" />
+                        <input type="number" asp-for="ManufactureCost" step="any" required class="validate form-control" />
                     </div>
                 </div>
             </div>
@@ -50,7 +56,7 @@
                 <div class="form-group form-float">
                     <div class="form-line">
                         <label asp-for="SellValue">Sell Value</label>
-                        <input type="number" asp-for="SellValue" required class="validate form-control" />
+                        <input type="number" asp-for="SellValue" step="any" required class="validate form-control" />
                     </div>
                 </div>
             </div>

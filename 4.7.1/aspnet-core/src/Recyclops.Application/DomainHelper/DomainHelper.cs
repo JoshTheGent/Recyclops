@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Abp.Application.Services.Dto;
 using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Recyclops.Domains.PlasticSpool;
@@ -44,176 +46,209 @@ namespace Recyclops.DomainHelper
         #region Methods
 
 
-        public void UploadLocations()
+        public async Task<List<int>> UploadLocations()
         {
-            var locations = new List<Domains.LocationSource.LocationSource>();
+            var locations = new List<Domains.LocationSource.LocationSource>
+            {
+                new Domains.LocationSource.LocationSource
+                {
+                    Id = 0,
+                    Name = "Waste Management - Arlington Recycling Facility",
+                    City = "Arlington",
+                    Address = "1915 Merdian St",
+                    State = Enums.State.TX,
+                    Zip = "76011"
+                },
+                new Domains.LocationSource.LocationSource
+                {
+                    Id = 0,
+                    Name = "DFW Recyclers",
+                    City = "Arlington",
+                    Address = "2410 w Division St",
+                    State = Enums.State.TX,
+                    Zip = "76012"
+                },
+                new Domains.LocationSource.LocationSource
+                {
+                    Id = 0,
+                    Name = "Plastic Rescue",
+                    City = "Dallas",
+                    Address = "3323 Pluto St",
+                    State = Enums.State.TX,
+                    Zip = "75212",
+                    URL = "https://www.plasticrescue.com/"
+                }
+            };
 
-            locations.Add(new Domains.LocationSource.LocationSource
-            {
-                Id = 0,
-                Name = "Waste Management - Arlington Recycling Facility",
-                City = "Arlington",
-                Address = "1915 Merdian St",
-                State = Enums.State.TX,
-                Zip = "76011"
-            });
-            locations.Add(new Domains.LocationSource.LocationSource
-            {
-                Id = 0,
-                Name = "DFW Recyclers",
-                City = "Arlington",
-                Address = "2410 w Division St",
-                State = Enums.State.TX,
-                Zip = "76012"
-            });
-            locations.Add(new Domains.LocationSource.LocationSource
-            {
-                Id = 0,
-                Name = "Plastic Rescue",
-                City = "Dallas",
-                Address = "3323 Pluto St",
-                State = Enums.State.TX,
-                Zip = "75212",
-                URL = "https://www.plasticrescue.com/"
-            });
+            var locIds = new List<int>();
 
-            locations.Select(x => _locationRepository.Create(new LocationSourceDto(x)));
+            foreach (var location in locations)
+            {
+               locIds.Add((await _locationRepository.Create(new LocationSourceDto(location))).Id);
+            }
+
+            return locIds;
+
+
         }
 
 
-        public void UploadPlastics()
+        public async Task<List<int>> UploadPlastics(List<int> locIds)
         {
-            var plastics = new List<Domains.Plastic.Plastic>();
-
-            plastics.Add(new Domains.Plastic.Plastic
+            var plastics = new List<Domains.Plastic.Plastic>
             {
+                new Domains.Plastic.Plastic
+                {
+                    Id = 0,
+                    Name = "PLA",
+                    Mass = 1.43,
+                    MeltingTemp = 180,
+                    HeatedBed = false,
+                    LocationSourceId = locIds[2]
+                },
+                new Domains.Plastic.Plastic
+                {
+                    Id = 0,
+                    Name = "PLA",
+                    Mass = 1.43,
+                    MeltingTemp = 180,
+                    HeatedBed = false,
+                    LocationSourceId = locIds[1]
+                },
+                new Domains.Plastic.Plastic
+                {
+                    Id = 0,
+                    Name = "ABS",
+                    Mass = 1.08,
+                    MeltingTemp = 240,
+                    HeatedBed = true,
+                    LocationSourceId = locIds[1]
+                },
+                new Domains.Plastic.Plastic
+                {
+                    Id = 0,
+                    Name = "ABS",
+                    Mass = 1.08,
+                    MeltingTemp = 240,
+                    HeatedBed = true,
+                    LocationSourceId = locIds[2]
+                },
+                new Domains.Plastic.Plastic
+                {
+                    Id = 0,
+                    Name = "Carbon Fiber Mix - ABS",
+                    Mass = 1.5,
+                    MeltingTemp = 230,
+                    HeatedBed = true,
+                    LocationSourceId = locIds[0]
+                },
+                new Domains.Plastic.Plastic
+                {
+                    Id = 0,
+                    Name = "PETG",
+                    Mass = 1.38,
+                    MeltingTemp = 230,
+                    HeatedBed = true,
+                    LocationSourceId = locIds[0]
+                }
+            };
 
-                CreationTime = DateTime.Now,
-                Name = "PLA",
-                Mass = 1.43,
-                MeltingTemp = 180,
-                HeatedBed = false,
-                LocationSourceId = 3
+            var plasticIds = new List<int>();
 
-            });
-            plastics.Add(new Domains.Plastic.Plastic
+            foreach (var plastic in plastics)
             {
+                 plasticIds.Add((await _plasticRepository.Create(new PlasticDto(plastic))).Id);
+            }
 
-                CreationTime = DateTime.Now,
-                Name = "PLA",
-                Mass = 1.43,
-                MeltingTemp = 180,
-                HeatedBed = false,
-                LocationSourceId = 2
-
-            });
-            plastics.Add(new Domains.Plastic.Plastic
-            {
-
-                CreationTime = DateTime.Now,
-                Name = "ABS",
-                Mass = 1.08,
-                MeltingTemp = 240,
-                HeatedBed = true,
-                LocationSourceId = 2
-            });
-            plastics.Add(new Domains.Plastic.Plastic
-            {
-
-                CreationTime = DateTime.Now,
-                Name = "ABS",
-                Mass = 1.08,
-                MeltingTemp = 240,
-                HeatedBed = true,
-                LocationSourceId = 3
-            });
-            plastics.Add(new Domains.Plastic.Plastic
-            {
-
-                CreationTime = DateTime.Now,
-                Name = "Carbon Fiber Mix - ABS",
-                Mass = 1.5,
-                MeltingTemp = 230,
-                HeatedBed = true,
-                LocationSourceId = 1
-            });
-            plastics.Add(new Domains.Plastic.Plastic
-            {
-
-                CreationTime = DateTime.Now,
-                Name = "PETG",
-                Mass = 1.38,
-                MeltingTemp = 230,
-                HeatedBed = true,
-                LocationSourceId = 1
-            });
-            plastics.Select(x => _plasticRepository.Create(new PlasticDto(x)));
+            return plasticIds;
         }
 
-        public void UploadSpools()
+        public async Task<List<int>> UploadSpools(List<int> plasticIds)
         {
-            var spools = new List<Domains.PlasticSpool.PlasticSpool>();
-            spools.Add(new Domains.PlasticSpool.PlasticSpool
+            var spools = new List<Domains.PlasticSpool.PlasticSpool>
             {
-
-                CreationTime = DateTime.Now,
-                Mass = 1000,
-                SellValue = 29.99,
-                TimeToManufacture = new TimeSpan(15, 0, 0),
-                ManufactureCost = 5.00,
-                PlasticId = 1
-            });
-            spools.Add(new Domains.PlasticSpool.PlasticSpool
+                new Domains.PlasticSpool.PlasticSpool
+                {
+                    Id = 0,
+                    Mass = 1000,
+                    SellValue = 29.99,
+                    TimeToManufacture = new TimeSpan(15, 0, 0),
+                    ManufactureCost = 5.00,
+                    PlasticId = plasticIds[0]
+                },
+                new Domains.PlasticSpool.PlasticSpool
+                {
+                    Id = 0,
+                    Mass = 1000,
+                    SellValue = 19.61,
+                    TimeToManufacture = new TimeSpan(23, 0, 0),
+                    ManufactureCost = 3.25,
+                    PlasticId = plasticIds[2]
+                },
+                new Domains.PlasticSpool.PlasticSpool
+                {
+                    Id = 0,
+                    Mass = 1000,
+                    SellValue = 84.20,
+                    TimeToManufacture = new TimeSpan(23, 0, 0),
+                    ManufactureCost = 15.45,
+                    PlasticId = plasticIds[4]
+                },
+                new Domains.PlasticSpool.PlasticSpool
+                {
+                    Id = 0,
+                    Mass = 1000,
+                    SellValue = 25,
+                    TimeToManufacture = new TimeSpan(10, 0, 0),
+                    ManufactureCost = 2.25,
+                    PlasticId = plasticIds[5]
+                }
+            };
+            var spoolIds = new List<int>();
+            foreach (var spool in spools)
             {
+               spoolIds.Add((await _spoolRepository.Create(new PlasticSpoolDto(spool))).Id);
+            }
 
-                CreationTime = DateTime.Now,
-                Mass = 1000,
-                SellValue = 19.61,
-                TimeToManufacture = new TimeSpan(23, 0, 0),
-                ManufactureCost = 3.25,
-                PlasticId = 3
-            });
-            spools.Add(new Domains.PlasticSpool.PlasticSpool
-            {
-
-                CreationTime = DateTime.Now,
-                Mass = 1000,
-                SellValue = 84.20,
-                TimeToManufacture = new TimeSpan(23, 0, 0),
-                ManufactureCost = 15.45,
-                PlasticId = 5
-            });
-            spools.Add(new Domains.PlasticSpool.PlasticSpool
-            {
-
-                CreationTime = DateTime.Now,
-                Mass = 1000,
-                SellValue = 25,
-                TimeToManufacture = new TimeSpan(10, 0, 0),
-                ManufactureCost = 2.25,
-                PlasticId = 6
-            });
-            spools.Select(x=> _spoolRepository.Create(new PlasticSpoolDto(x)));
+            return spoolIds;
         }
 
 
-        public void UploadPrintables()
+        public async Task<List<int>> UploadPrintables(List<int> spoolIds)
         {
-            var printables = new List<Domains.PrintableObject.PrintableObject>();
-            printables.Add(new Domains.PrintableObject.PrintableObject
+            var printables = new List<Domains.PrintableObject.PrintableObject>
             {
+                new Domains.PrintableObject.PrintableObject
+                {
+                    Id = 0,
+                    Name = "Baby Groot",
+                    PrintCost = .5,
+                    PrintTime = new TimeSpan(8, 0, 0),
+                    SellValue = 5.00,
+                    URL = "https://www.thingiverse.com/thing:2014307",
+                    PlasticSpoolId = spoolIds[0]
+                }
+            };
+            var printableIds = new List<int>();
+            foreach (var printable in printables)
+            {
+                printableIds.Add((await _printableRepository.Create(new PrintableObjectDto(printable))).Id);
+            }
 
-                CreationTime = DateTime.Now,
-                Name = "Baby Groot",
-                PrintCost = .5,
-                PrintTime = new TimeSpan(8, 0, 0),
-                SellValue = 5.00,
-                URL = "https://www.thingiverse.com/thing:2014307",
-                PlasticSpoolId = 1
-            });
-            printables.Select(x => _printableRepository.Create(new PrintableObjectDto(x)));
+            return printableIds;
         }
 
+
+        public bool UploadCheck()
+        {
+            return (_locationRepository.GetAll(new PagedAndSortedResultRequestDto()).Result.TotalCount == 0)
+                   && (_plasticRepository.GetAll(new PagedAndSortedResultRequestDto()).Result.TotalCount == 0)
+                   && (_spoolRepository.GetAll(new PagedAndSortedResultRequestDto()).Result.TotalCount == 0)
+                   && (_printableRepository.GetAll(new PagedAndSortedResultRequestDto()).Result.TotalCount == 0);
+
+
+
+        }
         
         private int RandomInt()
         {

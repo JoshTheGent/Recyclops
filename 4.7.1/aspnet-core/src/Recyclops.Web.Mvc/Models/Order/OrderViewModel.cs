@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Recyclops.Order.Dto;
 
 namespace Recyclops.Web.Models.Order
 {
@@ -87,8 +88,15 @@ namespace Recyclops.Web.Models.Order
         public IList<int> PlasticOrderIds { get; set; }
         public IList<int> PrintableOrderIds { get; set; }
 
+        public OrderDto DtoModel()
+        {
+            return new OrderDto
+            {
+                Id = Id,
+                IsComplete = false
 
-
+            };
+        }
 
 
     }

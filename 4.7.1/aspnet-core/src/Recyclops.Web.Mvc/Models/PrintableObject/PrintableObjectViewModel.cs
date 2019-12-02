@@ -27,6 +27,8 @@ namespace Recyclops.Web.Models.PrintableObject
             Id = dto.Id;
             Name = dto.Name;
             PrintTime = dto.PrintTime;
+            Hours = PrintTime.Hours;
+            Min = PrintTime.Minutes;
             PrintCost = dto.PrintCost;
             SellValue = dto.SellValue;
             URL = dto.URL;
@@ -40,6 +42,8 @@ namespace Recyclops.Web.Models.PrintableObject
             Id = dto.Id;
             Name = dto.Name;
             PrintTime = dto.PrintTime;
+            Hours = PrintTime.Hours;
+            Min = PrintTime.Minutes;
             PrintCost = dto.PrintCost;
             SellValue = dto.SellValue;
             URL = dto.URL;
@@ -56,12 +60,15 @@ namespace Recyclops.Web.Models.PrintableObject
         public string URL { get; set; }
         public int PlasticSpoolId { get; set; }
         public string PlasticSpoolName { get; set; }
+        public int Hours { get; set; }
+        public int Min { get; set; }
 
         public IEnumerable<SelectListItem> SpoolList { get; set; }
 
 
         public PrintableObjectDto DtoModel()
         {
+            var time = new TimeSpan(Hours, Min, 0);
             return new PrintableObjectDto
             {
                 Id = Id,
