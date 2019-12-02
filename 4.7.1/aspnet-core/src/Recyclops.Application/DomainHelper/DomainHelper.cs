@@ -77,6 +77,16 @@ namespace Recyclops.DomainHelper
                     State = Enums.State.TX,
                     Zip = "75212",
                     URL = "https://www.plasticrescue.com/"
+                },
+                new Domains.LocationSource.LocationSource
+                {
+                    Id = 0,
+                    Name = "Recycle Revolution",
+                    City = "Dallas",
+                    Address = "6835 Forest Park Rd",
+                    State = Enums.State.TX,
+                    Zip = "75235",
+                    URL = "http://www.recyclerevolutiondallas.com/"
                 }
             };
 
@@ -227,7 +237,37 @@ namespace Recyclops.DomainHelper
                     SellValue = 5.00,
                     URL = "https://www.thingiverse.com/thing:2014307",
                     PlasticSpoolId = spoolIds[0]
-                }
+                },
+                new Domains.PrintableObject.PrintableObject
+                {
+                    Id = 0,
+                    Name = "T-Rex Skull",
+                    PrintCost = .5,
+                    PrintTime = new TimeSpan(20, 0, 0),
+                    SellValue = 12.00,
+                    URL = "https://www.thingiverse.com/thing:308335",
+                    PlasticSpoolId = spoolIds[1]
+                },
+                new Domains.PrintableObject.PrintableObject
+                {
+                    Id = 0,
+                    Name = "All In One 3D Printer test",
+                    PrintCost = .5,
+                    PrintTime = new TimeSpan(1, 0, 0),
+                    SellValue = 2,
+                    URL = "https://www.thingiverse.com/thing:2656594",
+                    PlasticSpoolId = spoolIds[1]
+                },
+                new Domains.PrintableObject.PrintableObject
+                {
+                    Id = 0,
+                    Name = "Baby Yoda -like character Smiling",
+                    PrintCost = .5,
+                    PrintTime = new TimeSpan(3, 0, 0),
+                    SellValue = 2,
+                    URL = "https://www.thingiverse.com/thing:3987143",
+                    PlasticSpoolId = spoolIds[1]
+                },
             };
             var printableIds = new List<int>();
             foreach (var printable in printables)
