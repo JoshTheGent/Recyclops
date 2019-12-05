@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Recyclops.Controllers;
 using Recyclops.LocationSource;
@@ -12,6 +13,7 @@ using Recyclops.Web.Models.PrintableObject;
 
 namespace Recyclops.Web.Controllers
 {
+    [AbpMvcAuthorize]
     public class PrintableObjectController : RecyclopsControllerBase
     {
         #region Properies

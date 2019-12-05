@@ -16,17 +16,20 @@ namespace Recyclops.DashBoardReports
 
         private readonly IRepository<Domains.LocationSource.LocationSource> _locationSourceService;
         private readonly IRepository<Domains.Plastic.Plastic> _plasticService;
-
+        private readonly IRepository<Domains.PlasticSpool.PlasticSpool> _plasticSpoolService;
+        private readonly IRepository<Domains.PrintableObject.PrintableObject> _printableObjectService;
 
         #endregion
 
 
         #region Constructor
 
-        public DashBoardService(IRepository<Domains.LocationSource.LocationSource> locationSourceService, IRepository<Domains.Plastic.Plastic> plasticService)
+        public DashBoardService(IRepository<Domains.LocationSource.LocationSource> locationSourceService, IRepository<Domains.Plastic.Plastic> plasticService, IRepository<Domains.PlasticSpool.PlasticSpool> plasticSpoolService, IRepository<Domains.PrintableObject.PrintableObject> printableObjectService)
         {
             _locationSourceService = locationSourceService;
             _plasticService = plasticService;
+            _plasticSpoolService = plasticSpoolService;
+            _printableObjectService = printableObjectService;
         }
 
         #endregion
@@ -52,6 +55,23 @@ namespace Recyclops.DashBoardReports
             return new DashPlasticDto(plastic);
         }
 
+        public DashSpoolDto GetDashSpoolReport()
+        {
+            var plastic = _plasticSpoolService.GetAllList();
+
+
+
+            return new DashSpoolDto(plastic);
+        }
+
+        public DashPrintableDto GetDashPrintableReport()
+        {
+            var plastic = _printableObjectService.GetAllList();
+
+
+
+            return new DashPrintableDto(plastic);
+        }
 
 
         #endregion

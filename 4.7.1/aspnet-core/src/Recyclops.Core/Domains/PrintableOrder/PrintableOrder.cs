@@ -8,13 +8,6 @@ namespace Recyclops.Domains.PrintableOrder
     {
         #region Properties
 
-        //Attributes//
-        public double DerivedTotal { get; set; }
-
-
-
-
-
         //Relational//
         public int PrintableObjectId { get; set; }
         public int OrderId { get; set; }

@@ -6,6 +6,8 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services;
+using Abp.AutoMapper;
+using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Runtime.Session;
 using Microsoft.EntityFrameworkCore;
@@ -26,8 +28,8 @@ namespace Recyclops.Order
 
         #region Properties
 
-        private readonly IPrintableOrderService _printableOrderRepository;
-        private readonly IPlasticOrderService _plasticOrderRepository;
+        private readonly IRepository<Domains.PrintableOrder.PrintableOrder> _printableOrderRepository;
+        private readonly IRepository<Domains.PlasticOrder.PlasticOrder> _plasticOrderRepository;
         private readonly IAbpSession _abpSession;
 
         #endregion
@@ -35,7 +37,7 @@ namespace Recyclops.Order
 
         #region Constructor
 
-        public OrderService(IRepository<Domains.Order.Order, int> repository, IPrintableOrderService printableOrderRepository, IPlasticOrderService plasticOrderRepository, IAbpSession abpSession) : base(repository)
+        public OrderService(IRepository<Domains.Order.Order, int> repository, IRepository<Domains.PrintableOrder.PrintableOrder> printableOrderRepository, IRepository<Domains.PlasticOrder.PlasticOrder> plasticOrderRepository, IAbpSession abpSession) : base(repository)
         {
             _plasticOrderRepository = plasticOrderRepository;
             _printableOrderRepository = printableOrderRepository;
@@ -67,71 +69,52 @@ namespace Recyclops.Order
         }
 
 
-        public async Task SaveBridges(OrderDto data, List<PlasticSpoolDto> spools, List<PrintableObjectDto> printables)
+        public async Task SaveBridges(OrderHolder orderHolder)
         {
+            
             var user = _abpSession.GetUserId();
-            data.ClientId = user;
-            if (data.Id == 0)
+            orderHolder.OrderDto.ClientId = user;
+            if (orderHolder.OrderDto.Id == 0)
             {
-                data.Id = (await base.Create(data)).Id;
+                orderHolder.OrderDto.Id = (await base.Create(orderHolder.OrderDto)).Id;
             }
 
             var spoolTotal = (double)0;
             var spoolList = new List<PlasticOrderDto>();
-            foreach (var spool in spools)
+            foreach (var spool in orderHolder.PlasticOrderDtos)
             {
                 spoolTotal += spool.SellValue;
-                //spoolList.Add(new PlasticOrderDto
-                //{
-                //    Id = 0,
-                //    OrderId = data.Id,
-                //    PlasticSpoolId = spool.Id
-                //});
-
-                await _plasticOrderRepository.Create(new PlasticOrderDto
+                
+                var order = new Domains.PlasticOrder.PlasticOrder
                 {
                     Id = 0,
-                    OrderId = data.Id,
+                    OrderId = orderHolder.OrderDto.Id,
                     PlasticSpoolId = spool.Id
-                });
+                };
+                _plasticOrderRepository.Insert(order);
             }
 
-            //foreach (var spool in spoolList)
-            //{
-            //    //spool.DerivedTotal = spoolTotal;
-            //    var plas = (await _plasticOrderRepository.Create(spool)).Id;
-            //}
 
             var printableTotal = (double)0;
             var printableList = new List<Domains.PrintableOrder.PrintableOrder>();
-            foreach (var printable in printables)
+            foreach (var printable in orderHolder.PrintableOrderDtos)
             {
                 printableTotal += printable.SellValue;
-                await _printableOrderRepository.Create(new PrintableOrderDto
+                var order = new Domains.PrintableOrder.PrintableOrder
                 {
-                    OrderId = data.Id,
+                    OrderId = orderHolder.OrderDto.Id,
                     PrintableObjectId = printable.Id
-                });
-                //printableList.Add(new Domains.PrintableOrder.PrintableOrder
-                //{
-                //    Id = 0,
-                //    OrderId = data.Id,
-                //    PrintableObjectId = printable.Id
-                //});
+                };
+                _printableOrderRepository.Insert(order);
+                
             }
 
-            //foreach (var printable in printableList)
-            //{
-            //    //printable.DerivedTotal = printableTotal;
-            //    var prin = (await _printableOrderRepository.Create(new PrintableOrderDto(printable))).Id;
-            //}
 
-            data.TotalCost = spoolTotal + printableTotal;
-
+            orderHolder.OrderDto.TotalCost = spoolTotal + printableTotal;
 
 
             
-            await base.Update(data);
+            await base.Update(orderHolder.OrderDto);
             
                 
 

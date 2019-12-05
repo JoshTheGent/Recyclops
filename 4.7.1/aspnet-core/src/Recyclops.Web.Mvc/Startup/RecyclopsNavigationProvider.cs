@@ -22,6 +22,14 @@ namespace Recyclops.Web.Startup
                     )
                 ).AddItem(
                     new MenuItemDefinition(
+                        PageNames.Home,
+                        L("PowerPoint"),
+                        url: "PowerPoint",
+                        icon: "home",
+                        requiresAuthentication: true
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
                         PageNames.Order,
                         L("Order"),
                         url: "Order",

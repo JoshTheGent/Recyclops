@@ -1,0 +1,57 @@
+﻿@model List<Recyclops.Audit.Dto.AuditServiceDto>
+
+<table id="reportTable" class="table table-collapse table-hover mb-0">
+    <thead>
+        <tr>
+            <th class="icon-only"></th>
+            <th style="width: 250px;">Change Date-Time</th>
+            <th style="width: 250px;">User</th>
+            <th style="width: 350px;">Type</th>
+            <th>Reason</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var rowGuid = Guid.NewGuid();
+            <tr>
+                <td class="icon-only">
+                    <a href="@("#collapse" + rowGuid)" class="collapse-toggle collapsed icon-only" data-toggle="collapse" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="collapseTable">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </td>
+                <td>@item.Date.ToString("MM/dd/yyyy hh:mm:ss tt")</td>
+                <td>@item.UsersName</td>
+                <td>@item.Type</td>
+                <td>@item.Reason</td>
+            </tr>
+            <tr class="collapsible">
+                <td colspan="5" class="p-0">
+                    <div id="@("collapse" + rowGuid)" class="collapse">
+                        <div class="pt-3 pr-3 pb-3 pl-3">
+                            <table class="table table-hover mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width: calc(300px - 0.75rem);">Property Changed</th>
+                                        <th style="width: 600px;">Original Value</th>
+                                        <th>New Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var thing in item.AuditDetails)
+                                    {
+                                        <tr>
+                                            <td>@thing.PropertyChanged</td>
+                                            <td>@thing.OriginalValue</td>
+                                            <td>@thing.NewValue</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

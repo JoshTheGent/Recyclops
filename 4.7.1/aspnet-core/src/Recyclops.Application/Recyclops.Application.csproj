@@ -11,6 +11,9 @@
     <RootNamespace>Recyclops</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Abp.Web.Api" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Recyclops.Core\Recyclops.Core.csproj" />
   </ItemGroup>
 </Project>

@@ -8,13 +8,6 @@ namespace Recyclops.Domains.PlasticOrder
     {
         #region Properties
 
-        //Attributes
-        public double DerivedTotal { get; set; }
-
-
-
-
-
         //Relational
         public int PlasticSpoolId { get; set; }
         public int OrderId { get; set; }

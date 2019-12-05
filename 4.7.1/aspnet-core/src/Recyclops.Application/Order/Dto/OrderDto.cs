@@ -4,6 +4,10 @@ using System.Text;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Recyclops.Authorization.Users;
+using Recyclops.PlasticOrder.Dto;
+using Recyclops.PlasticSpool.Dto;
+using Recyclops.PrintableObject.Dto;
+using Recyclops.PrintableOrder.Dto;
 
 namespace Recyclops.Order.Dto
 {
@@ -46,5 +50,21 @@ namespace Recyclops.Order.Dto
         public IEnumerable<Domains.PrintableOrder.PrintableOrder> PrintableOrders { get; set; }
         #endregion
 
+    }
+
+    public class OrderHolder
+    {
+        public OrderHolder(OrderDto order, List<PlasticSpoolDto> spool, List<PrintableObjectDto> printable)
+        {
+            PlasticOrderDtos = spool;
+            OrderDto = order;
+            PrintableOrderDtos = printable;
+        }
+
+        public List<PlasticSpoolDto> PlasticOrderDtos { get; set; }
+
+        public List<PrintableObjectDto> PrintableOrderDtos { get; set; }
+
+        public OrderDto OrderDto { get; set; }
     }
 }
