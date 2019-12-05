@@ -1163,8 +1163,6 @@ namespace Recyclops.Migrations
 
                     b.Property<DateTime?>("DeletionTime");
 
-                    b.Property<double>("DerivedTotal");
-
                     b.Property<bool>("IsDeleted");
 
                     b.Property<DateTime?>("LastModificationTime");
@@ -1273,8 +1271,6 @@ namespace Recyclops.Migrations
                     b.Property<long?>("DeleterUserId");
 
                     b.Property<DateTime?>("DeletionTime");
-
-                    b.Property<double>("DerivedTotal");
 
                     b.Property<bool>("IsDeleted");
 

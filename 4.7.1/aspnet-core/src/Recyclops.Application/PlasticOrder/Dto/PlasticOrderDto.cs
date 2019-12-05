@@ -17,7 +17,6 @@ namespace Recyclops.PlasticOrder.Dto
 
         public int PlasticSpoolId { get; set; }
         public int OrderId { get; set; }
-        public double DerivedTotal { get; set; }
 
         //Navigational
         //Has One

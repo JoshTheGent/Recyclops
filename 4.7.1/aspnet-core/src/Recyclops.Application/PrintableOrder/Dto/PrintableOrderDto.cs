@@ -20,7 +20,6 @@ namespace Recyclops.PrintableOrder.Dto
             Id = dom.Id;
             PrintableObjectId = dom.PrintableObjectId;
             OrderId = dom.OrderId;
-            DerivedTotal = dom.DerivedTotal;
         }
 
         public int PrintableObjectId { get; set; }

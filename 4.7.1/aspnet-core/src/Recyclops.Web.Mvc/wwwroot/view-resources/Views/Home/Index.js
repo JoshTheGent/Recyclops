@@ -14,6 +14,28 @@
     initSparkline();
 });
 
+
+$("#filterBtn").on('click', function () {
+    abp.ui.setBusy('#tableContainer');
+    abp.ajax({
+        url: '/Home/LoadTable',
+        type: 'GET',
+        dataType: 'HTML',
+        data: {
+            StartDate: $("#StartDate").val(),
+            EndDate: $("#EndDate").val()
+        }
+    }).done(function (data) {
+        $("#auditTableContainer").empty().html(data);
+
+    }).fail(function (error) {
+        abp.notify.error('Error: ' + error);
+    }).always(function () {
+        abp.ui.clearBusy('#tableContainer');
+    });
+});
+
+
 var realtime = 'on';
 function initRealTimeChart() {
     //Real time ==========================================================================================

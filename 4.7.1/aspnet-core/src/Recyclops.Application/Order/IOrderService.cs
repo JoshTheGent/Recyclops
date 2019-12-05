@@ -14,6 +14,6 @@ namespace Recyclops.Order
 
         List<OrderDto> GetAllIncluding();
 
-        Task SaveBridges(OrderDto data, List<PlasticSpoolDto> spools, List<PrintableObjectDto> printables);
+        Task SaveBridges(OrderHolder orderHolder);
     }
 }

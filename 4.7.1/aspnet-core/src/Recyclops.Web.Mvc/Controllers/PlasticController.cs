@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.AspNetCore.Mvc.Authorization;
 using Recyclops.Controllers;
 using Recyclops.Plastic;
 using Recyclops.Web.Models.Plastic;
@@ -11,6 +12,7 @@ using Recyclops.LocationSource;
 
 namespace Recyclops.Web.Controllers
 {
+    [AbpMvcAuthorize]
     public class PlasticController : RecyclopsControllerBase
     {
         #region Properies

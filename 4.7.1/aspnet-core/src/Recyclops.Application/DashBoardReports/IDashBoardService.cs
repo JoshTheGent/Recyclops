@@ -11,5 +11,9 @@ namespace Recyclops.DashBoardReports
         DashLocationDto GetDashLocationReport();
 
         DashPlasticDto GetDashPlasticReport();
+
+        DashSpoolDto GetDashSpoolReport();
+
+        DashPrintableDto GetDashPrintableReport();
     }
 }

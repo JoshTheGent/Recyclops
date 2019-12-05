@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <localizationDictionary culture="en">
   <texts>
+    <text name="PowerPoint" value="Power Point"/>
     <text name="Orders" value="Orders"/>
     <text name="Order" value="Order"/>
     <text name="PrintableObject" value="Printable Object"/>

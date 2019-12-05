@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.AspNetCore.Mvc.Authorization;
 using Castle.Core.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Recyclops.Controllers;
 using Recyclops.LocationSource;
 using Recyclops.Order;
+using Recyclops.Order.Dto;
 using Recyclops.Plastic;
 using Recyclops.PlasticSpool;
 using Recyclops.PlasticSpool.Dto;
@@ -20,6 +22,7 @@ using Recyclops.Web.Models.PrintableObject;
 
 namespace Recyclops.Web.Controllers
 {
+    [AbpMvcAuthorize]
     public class OrderController : RecyclopsControllerBase
     {
         #region Properies
@@ -77,7 +80,10 @@ namespace Recyclops.Web.Controllers
             var printables = OrderViewModel.PrintableOrderIds.IsNullOrEmpty() ? new List<PrintableObjectDto>() : OrderViewModel.PrintableOrderIds.Select(x => (_printableObjectService.Get(new EntityDto(x)).Result))
                 .ToList();
 
-            await _orderService.SaveBridges(data, spools, printables);
+            var order = new OrderHolder(data, spools, printables);
+
+
+            await _orderService.SaveBridges(order);
 
             //if (OrderViewModel.Id == 0)
             //    await _orderService.Create(data);
